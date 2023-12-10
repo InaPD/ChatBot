@@ -1,0 +1,58 @@
+AWS::SageMaker::ModelCard EvaluationDetail
+The evaluation details of the model.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Datasets](#cfn-sagemaker-modelcard-evaluationdetail-datasets)" : [ String, ... ],
+  "[EvaluationJobArn](#cfn-sagemaker-modelcard-evaluationdetail-evaluationjobarn)" : String,
+  "[EvaluationObservation](#cfn-sagemaker-modelcard-evaluationdetail-evaluationobservation)" : String,
+  "[Metadata](#cfn-sagemaker-modelcard-evaluationdetail-metadata)" : {Key : Value, ...},
+  "[MetricGroups](#cfn-sagemaker-modelcard-evaluationdetail-metricgroups)" : [ MetricGroup, ... ],
+  "[Name](#cfn-sagemaker-modelcard-evaluationdetail-name)" : String
+}
+
+YAML
+
+  [Datasets](#cfn-sagemaker-modelcard-evaluationdetail-datasets): 
+    - String
+  [EvaluationJobArn](#cfn-sagemaker-modelcard-evaluationdetail-evaluationjobarn): String
+  [EvaluationObservation](#cfn-sagemaker-modelcard-evaluationdetail-evaluationobservation): String
+  [Metadata](#cfn-sagemaker-modelcard-evaluationdetail-metadata): 
+    Key : Value
+  [MetricGroups](#cfn-sagemaker-modelcard-evaluationdetail-metricgroups): 
+    - MetricGroup
+  [Name](#cfn-sagemaker-modelcard-evaluationdetail-name): String
+
+Properties
+Datasets 
+The location of the datasets used to evaluate the model. 
+Required: No 
+Type: List of String 
+Update requires: No interruption
+EvaluationJobArn 
+The Amazon Resource Name (ARN) of the evaluation job. 
+Required: No 
+Type: String 
+Update requires: No interruption
+EvaluationObservation 
+Any observations made during the model evaluation. 
+Required: No 
+Type: String 
+Update requires: No interruption
+Metadata 
+Additional attributes associated with the evaluation results. 
+Required: No 
+Type: Map of String 
+Update requires: No interruption
+MetricGroups 
+An evaluation Metric Group object. 
+Required: No 
+Type: List of MetricGroup 
+Update requires: No interruption
+Name 
+The evaluation job name. 
+Required: Yes 
+Type: String 
+Update requires: No interruption

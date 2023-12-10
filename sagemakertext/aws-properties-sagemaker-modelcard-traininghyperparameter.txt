@@ -1,0 +1,27 @@
+AWS::SageMaker::ModelCard TrainingHyperParameter
+A hyper parameter that was configured in training the model.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Name](#cfn-sagemaker-modelcard-traininghyperparameter-name)" : String,
+  "[Value](#cfn-sagemaker-modelcard-traininghyperparameter-value)" : String
+}
+
+YAML
+
+  [Name](#cfn-sagemaker-modelcard-traininghyperparameter-name): String
+  [Value](#cfn-sagemaker-modelcard-traininghyperparameter-value): String
+
+Properties
+Name 
+The name of the hyper parameter. 
+Required: Yes 
+Type: String 
+Update requires: No interruption
+Value 
+The value specified for the hyper parameter. 
+Required: Yes 
+Type: String 
+Update requires: No interruption

@@ -1,0 +1,22 @@
+AWS::SageMaker::NotebookInstance InstanceMetadataServiceConfiguration
+Information on the IMDS configuration of the notebook instance
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[MinimumInstanceMetadataServiceVersion](#cfn-sagemaker-notebookinstance-instancemetadataserviceconfiguration-minimuminstancemetadataserviceversion)" : String
+}
+
+YAML
+
+  [MinimumInstanceMetadataServiceVersion](#cfn-sagemaker-notebookinstance-instancemetadataserviceconfiguration-minimuminstancemetadataserviceversion): String
+
+Properties
+MinimumInstanceMetadataServiceVersion 
+Indicates the minimum IMDS version that the notebook instance supports. When passed as part of CreateNotebookInstance, if no value is selected, then it defaults to IMDSv1. This means that both IMDSv1 and IMDSv2 are supported. If passed as part of UpdateNotebookInstance, there is no default. 
+Required: Yes 
+Type: String 
+Maximum: 1 
+Pattern: 1|2 
+Update requires: No interruption

@@ -1,0 +1,61 @@
+AWS::SageMaker::Space
+Creates a space used for real time collaboration in a Domain.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "Type" : "AWS::SageMaker::Space",
+  "Properties" : {
+      "[DomainId](#cfn-sagemaker-space-domainid)" : String,
+      "[SpaceName](#cfn-sagemaker-space-spacename)" : String,
+      "[SpaceSettings](#cfn-sagemaker-space-spacesettings)" : SpaceSettings,
+      "[Tags](#cfn-sagemaker-space-tags)" : [ [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html), ... ]
+    }
+}
+
+YAML
+
+Type: AWS::SageMaker::Space
+Properties: 
+  [DomainId](#cfn-sagemaker-space-domainid): String
+  [SpaceName](#cfn-sagemaker-space-spacename): String
+  [SpaceSettings](#cfn-sagemaker-space-spacesettings): 
+    SpaceSettings
+  [Tags](#cfn-sagemaker-space-tags): 
+    - [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
+
+Properties
+DomainId 
+The ID of the associated Domain. 
+Required: Yes 
+Type: String 
+Maximum: 63 
+Update requires: Replacement
+SpaceName 
+The name of the space. 
+Required: Yes 
+Type: String 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62} 
+Update requires: Replacement
+SpaceSettings 
+A collection of space settings. 
+Required: No 
+Type: SpaceSettings 
+Update requires: No interruption
+Tags 
+An array of key-value pairs to apply to this resource. 
+For more information, see Tag. 
+Required: No 
+Type: List of Tag 
+Maximum: 50 
+Update requires: No interruption
+Return values
+Ref
+Fn::GetAtt
+The Fn::GetAtt intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+For more information about using the Fn::GetAtt intrinsic function, see Fn::GetAtt.
+
+SpaceArn 
+The space's Amazon Resource Name (ARN).

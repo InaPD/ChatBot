@@ -1,0 +1,31 @@
+AWS::SageMaker::InferenceExperiment CaptureContentTypeHeader
+Configuration specifying how to treat different headers. If no headers are specified SageMaker will by default base64 encode when capturing the data.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[CsvContentTypes](#cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-csvcontenttypes)" : [ String, ... ],
+  "[JsonContentTypes](#cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-jsoncontenttypes)" : [ String, ... ]
+}
+
+YAML
+
+  [CsvContentTypes](#cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-csvcontenttypes): 
+    - String
+  [JsonContentTypes](#cfn-sagemaker-inferenceexperiment-capturecontenttypeheader-jsoncontenttypes): 
+    - String
+
+Properties
+CsvContentTypes 
+The list of all content type headers that SageMaker will treat as CSV and capture accordingly. 
+Required: No 
+Type: List of String 
+Maximum: 10 
+Update requires: No interruption
+JsonContentTypes 
+The list of all content type headers that SageMaker will treat as JSON and capture accordingly. 
+Required: No 
+Type: List of String 
+Maximum: 10 
+Update requires: No interruption

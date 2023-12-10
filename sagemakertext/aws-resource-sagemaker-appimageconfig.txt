@@ -1,0 +1,54 @@
+AWS::SageMaker::AppImageConfig
+Creates a configuration for running a SageMaker image as a KernelGateway app. The configuration specifies the Amazon Elastic File System (EFS) storage volume on the image, and a list of the kernels in the image.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "Type" : "AWS::SageMaker::AppImageConfig",
+  "Properties" : {
+      "[AppImageConfigName](#cfn-sagemaker-appimageconfig-appimageconfigname)" : String,
+      "[KernelGatewayImageConfig](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig)" : KernelGatewayImageConfig,
+      "[Tags](#cfn-sagemaker-appimageconfig-tags)" : [ [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html), ... ]
+    }
+}
+
+YAML
+
+Type: AWS::SageMaker::AppImageConfig
+Properties: 
+  [AppImageConfigName](#cfn-sagemaker-appimageconfig-appimageconfigname): String
+  [KernelGatewayImageConfig](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig): 
+    KernelGatewayImageConfig
+  [Tags](#cfn-sagemaker-appimageconfig-tags): 
+    - [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
+
+Properties
+AppImageConfigName 
+The name of the AppImageConfig. Must be unique to your account. 
+Required: Yes 
+Type: String 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62} 
+Update requires: Replacement
+KernelGatewayImageConfig 
+The configuration for the file system and kernels in the SageMaker image. 
+Required: No 
+Type: KernelGatewayImageConfig 
+Update requires: No interruption
+Tags 
+An array of key-value pairs to apply to this resource. 
+For more information, see Tag. 
+Required: No 
+Type: List of Tag 
+Update requires: Replacement
+Return values
+Ref
+When you pass the logical ID of this resource to the intrinsic Ref function, Ref returns the name of the AppImageConfig.
+For more information about using the Ref function, see Ref.
+Fn::GetAtt
+The Fn::GetAtt intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+For more information about using the Fn::GetAtt intrinsic function, see Fn::GetAtt.
+
+AppImageConfigArn 
+The Amazon Resource Name (ARN) of the AppImageConfig, such as arn:aws:sagemaker:us-west-2:account-id:app-image-config/my-app-image-config-name.

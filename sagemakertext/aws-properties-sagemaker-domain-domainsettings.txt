@@ -1,0 +1,30 @@
+AWS::SageMaker::Domain DomainSettings
+A collection of settings that apply to the SageMaker Domain. These settings are specified through the CreateDomain API call.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[RStudioServerProDomainSettings](#cfn-sagemaker-domain-domainsettings-rstudioserverprodomainsettings)" : RStudioServerProDomainSettings,
+  "[SecurityGroupIds](#cfn-sagemaker-domain-domainsettings-securitygroupids)" : [ String, ... ]
+}
+
+YAML
+
+  [RStudioServerProDomainSettings](#cfn-sagemaker-domain-domainsettings-rstudioserverprodomainsettings): 
+    RStudioServerProDomainSettings
+  [SecurityGroupIds](#cfn-sagemaker-domain-domainsettings-securitygroupids): 
+    - String
+
+Properties
+RStudioServerProDomainSettings 
+A collection of settings that configure the RStudioServerPro Domain-level app. 
+Required: No 
+Type: RStudioServerProDomainSettings 
+Update requires: No interruption
+SecurityGroupIds 
+The security groups for the Amazon Virtual Private Cloud that the Domain uses for communication between Domain-level apps and user apps. 
+Required: No 
+Type: List of String 
+Maximum: 3 
+Update requires: No interruption

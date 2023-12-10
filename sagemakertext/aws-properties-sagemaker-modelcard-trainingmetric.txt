@@ -1,0 +1,34 @@
+AWS::SageMaker::ModelCard TrainingMetric
+A result from a SageMaker training job.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Name](#cfn-sagemaker-modelcard-trainingmetric-name)" : String,
+  "[Notes](#cfn-sagemaker-modelcard-trainingmetric-notes)" : String,
+  "[Value](#cfn-sagemaker-modelcard-trainingmetric-value)" : Double
+}
+
+YAML
+
+  [Name](#cfn-sagemaker-modelcard-trainingmetric-name): String
+  [Notes](#cfn-sagemaker-modelcard-trainingmetric-notes): String
+  [Value](#cfn-sagemaker-modelcard-trainingmetric-value): Double
+
+Properties
+Name 
+The name of the result from the SageMaker training job. 
+Required: Yes 
+Type: String 
+Update requires: No interruption
+Notes 
+Any additional notes describing the result of the training job. 
+Required: No 
+Type: String 
+Update requires: No interruption
+Value 
+The value of a result from the SageMaker training job. 
+Required: Yes 
+Type: Double 
+Update requires: No interruption

@@ -1,0 +1,157 @@
+AWS::SageMaker::InferenceExperiment
+Creates an inference experiment using the configurations specified in the request. 
+Use this API to setup and schedule an experiment to compare model variants on a Amazon SageMaker inference endpoint. For more information about inference experiments, see Shadow tests. 
+Amazon SageMaker begins your experiment at the scheduled time and routes traffic to your endpoint's model variants based on your specified configuration. 
+While the experiment is in progress or after it has concluded, you can view metrics that compare your model variants. For more information, see View, monitor, and edit shadow tests. 
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "Type" : "AWS::SageMaker::InferenceExperiment",
+  "Properties" : {
+      "[DataStorageConfig](#cfn-sagemaker-inferenceexperiment-datastorageconfig)" : DataStorageConfig,
+      "[Description](#cfn-sagemaker-inferenceexperiment-description)" : String,
+      "[DesiredState](#cfn-sagemaker-inferenceexperiment-desiredstate)" : String,
+      "[EndpointName](#cfn-sagemaker-inferenceexperiment-endpointname)" : String,
+      "[KmsKey](#cfn-sagemaker-inferenceexperiment-kmskey)" : String,
+      "[ModelVariants](#cfn-sagemaker-inferenceexperiment-modelvariants)" : [ ModelVariantConfig, ... ],
+      "[Name](#cfn-sagemaker-inferenceexperiment-name)" : String,
+      "[RoleArn](#cfn-sagemaker-inferenceexperiment-rolearn)" : String,
+      "[Schedule](#cfn-sagemaker-inferenceexperiment-schedule)" : InferenceExperimentSchedule,
+      "[ShadowModeConfig](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig)" : ShadowModeConfig,
+      "[StatusReason](#cfn-sagemaker-inferenceexperiment-statusreason)" : String,
+      "[Tags](#cfn-sagemaker-inferenceexperiment-tags)" : [ [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html), ... ],
+      "[Type](#cfn-sagemaker-inferenceexperiment-type)" : String
+    }
+}
+
+YAML
+
+Type: AWS::SageMaker::InferenceExperiment
+Properties: 
+  [DataStorageConfig](#cfn-sagemaker-inferenceexperiment-datastorageconfig): 
+    DataStorageConfig
+  [Description](#cfn-sagemaker-inferenceexperiment-description): String
+  [DesiredState](#cfn-sagemaker-inferenceexperiment-desiredstate): String
+  [EndpointName](#cfn-sagemaker-inferenceexperiment-endpointname): String
+  [KmsKey](#cfn-sagemaker-inferenceexperiment-kmskey): String
+  [ModelVariants](#cfn-sagemaker-inferenceexperiment-modelvariants): 
+    - ModelVariantConfig
+  [Name](#cfn-sagemaker-inferenceexperiment-name): String
+  [RoleArn](#cfn-sagemaker-inferenceexperiment-rolearn): String
+  [Schedule](#cfn-sagemaker-inferenceexperiment-schedule): 
+    InferenceExperimentSchedule
+  [ShadowModeConfig](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig): 
+    ShadowModeConfig
+  [StatusReason](#cfn-sagemaker-inferenceexperiment-statusreason): String
+  [Tags](#cfn-sagemaker-inferenceexperiment-tags): 
+    - [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
+  [Type](#cfn-sagemaker-inferenceexperiment-type): String
+
+Properties
+DataStorageConfig 
+The Amazon S3 location and configuration for storing inference request and response data. 
+Required: No 
+Type: DataStorageConfig 
+Update requires: No interruption
+Description 
+The description of the inference experiment. 
+Required: No 
+Type: String 
+Maximum: 1024 
+Pattern: .* 
+Update requires: No interruption
+DesiredState 
+ The desired state of the experiment after stopping. The possible states are the following: 
++  Completed: The experiment completed successfully
++  Cancelled: The experiment was canceled
+Required: No 
+Type: String 
+Allowed values: Cancelled | Completed 
+Update requires: No interruption
+EndpointName 
+The name of the endpoint. 
+Required: Yes 
+Type: String 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62} 
+Update requires: Replacement
+KmsKey 
+ The AWS Key Management Service key that Amazon SageMaker uses to encrypt captured data at rest using Amazon S3 server-side encryption. 
+Required: No 
+Type: String 
+Maximum: 2048 
+Pattern: .* 
+Update requires: Replacement
+ModelVariants 
+ An array of ModelVariantConfigSummary objects. There is one for each variant in the inference experiment. Each ModelVariantConfigSummary object in the array describes the infrastructure configuration for deploying the corresponding variant. 
+Required: Yes 
+Type: List of ModelVariantConfig 
+Update requires: No interruption
+Name 
+The name of the inference experiment. 
+Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 120 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119} 
+Update requires: Replacement
+RoleArn 
+ The ARN of the IAM role that Amazon SageMaker can assume to access model artifacts and container images, and manage Amazon SageMaker Inference endpoints for model deployment. 
+Required: Yes 
+Type: String 
+Minimum: 20 
+Maximum: 2048 
+Pattern: ^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$ 
+Update requires: Replacement
+Schedule 
+The duration for which the inference experiment ran or will run. 
+The maximum duration that you can set for an inference experiment is 30 days. 
+Required: No 
+Type: InferenceExperimentSchedule 
+Update requires: No interruption
+ShadowModeConfig 
+ The configuration of ShadowMode inference experiment type, which shows the production variant that takes all the inference requests, and the shadow variant to which Amazon SageMaker replicates a percentage of the inference requests. For the shadow variant it also shows the percentage of requests that Amazon SageMaker replicates. 
+Required: No 
+Type: ShadowModeConfig 
+Update requires: No interruption
+StatusReason 
+The error message for the inference experiment status result. 
+Required: No 
+Type: String 
+Maximum: 1024 
+Pattern: .* 
+Update requires: No interruption
+Tags 
+An array of key-value pairs to apply to this resource. 
+For more information, see Tag. 
+Required: No 
+Type: List of Tag 
+Update requires: No interruption
+Type 
+The type of the inference experiment. 
+Required: Yes 
+Type: String 
+Allowed values: ShadowMode 
+Update requires: Replacement
+Return values
+Ref
+Fn::GetAtt
+
+Arn 
+Property description not available.
+CreationTime 
+Property description not available.
+EndpointMetadata 
+Property description not available.
+EndpointMetadata.EndpointConfigName 
+Property description not available.
+EndpointMetadata.EndpointName 
+Property description not available.
+EndpointMetadata.EndpointStatus 
+Property description not available.
+LastModifiedTime 
+Property description not available.
+Status 
+Property description not available.

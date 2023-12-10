@@ -1,0 +1,23 @@
+AWS::SageMaker::Endpoint Alarm
+An Amazon CloudWatch alarm configured to monitor metrics on an endpoint.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[AlarmName](#cfn-sagemaker-endpoint-alarm-alarmname)" : String
+}
+
+YAML
+
+  [AlarmName](#cfn-sagemaker-endpoint-alarm-alarmname): String
+
+Properties
+AlarmName 
+The name of a CloudWatch alarm in your account. 
+Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 255 
+Pattern: ^(?!\s*$).+ 
+Update requires: No interruption

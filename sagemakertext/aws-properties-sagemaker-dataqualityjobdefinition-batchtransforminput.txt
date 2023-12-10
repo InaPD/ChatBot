@@ -1,0 +1,49 @@
+AWS::SageMaker::DataQualityJobDefinition BatchTransformInput
+The BatchTransformInput property type specifies Property description not available. for an AWS::SageMaker::DataQualityJobDefinition.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[DataCapturedDestinationS3Uri](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-datacaptureddestinations3uri)" : String,
+  "[DatasetFormat](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-datasetformat)" : DatasetFormat,
+  "[LocalPath](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-localpath)" : String,
+  "[S3DataDistributionType](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-s3datadistributiontype)" : String,
+  "[S3InputMode](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-s3inputmode)" : String
+}
+
+YAML
+
+  [DataCapturedDestinationS3Uri](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-datacaptureddestinations3uri): String
+  [DatasetFormat](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-datasetformat): 
+    DatasetFormat
+  [LocalPath](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-localpath): String
+  [S3DataDistributionType](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-s3datadistributiontype): String
+  [S3InputMode](#cfn-sagemaker-dataqualityjobdefinition-batchtransforminput-s3inputmode): String
+
+Properties
+DataCapturedDestinationS3Uri 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+DatasetFormat 
+Property description not available. 
+Required: Yes 
+Type: DatasetFormat 
+Update requires: Replacement
+LocalPath 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+S3DataDistributionType 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+S3InputMode 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement

@@ -1,0 +1,61 @@
+AWS::SageMaker::ModelCard Content
+The content of the model card. It follows the model card json schema.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[AdditionalInformation](#cfn-sagemaker-modelcard-content-additionalinformation)" : AdditionalInformation,
+  "[BusinessDetails](#cfn-sagemaker-modelcard-content-businessdetails)" : BusinessDetails,
+  "[EvaluationDetails](#cfn-sagemaker-modelcard-content-evaluationdetails)" : [ EvaluationDetail, ... ],
+  "[IntendedUses](#cfn-sagemaker-modelcard-content-intendeduses)" : IntendedUses,
+  "[ModelOverview](#cfn-sagemaker-modelcard-content-modeloverview)" : ModelOverview,
+  "[TrainingDetails](#cfn-sagemaker-modelcard-content-trainingdetails)" : TrainingDetails
+}
+
+YAML
+
+  [AdditionalInformation](#cfn-sagemaker-modelcard-content-additionalinformation): 
+    AdditionalInformation
+  [BusinessDetails](#cfn-sagemaker-modelcard-content-businessdetails): 
+    BusinessDetails
+  [EvaluationDetails](#cfn-sagemaker-modelcard-content-evaluationdetails): 
+    - EvaluationDetail
+  [IntendedUses](#cfn-sagemaker-modelcard-content-intendeduses): 
+    IntendedUses
+  [ModelOverview](#cfn-sagemaker-modelcard-content-modeloverview): 
+    ModelOverview
+  [TrainingDetails](#cfn-sagemaker-modelcard-content-trainingdetails): 
+    TrainingDetails
+
+Properties
+AdditionalInformation 
+Additional information about the model. 
+Required: No 
+Type: AdditionalInformation 
+Update requires: No interruption
+BusinessDetails 
+Information about how the model supports business goals. 
+Required: No 
+Type: BusinessDetails 
+Update requires: No interruption
+EvaluationDetails 
+An overview about the model's evaluation. 
+Required: No 
+Type: List of EvaluationDetail 
+Update requires: No interruption
+IntendedUses 
+The intended usage of the model. 
+Required: No 
+Type: IntendedUses 
+Update requires: No interruption
+ModelOverview 
+An overview about the model 
+Required: No 
+Type: ModelOverview 
+Update requires: No interruption
+TrainingDetails 
+An overview about model training. 
+Required: No 
+Type: TrainingDetails 
+Update requires: No interruption

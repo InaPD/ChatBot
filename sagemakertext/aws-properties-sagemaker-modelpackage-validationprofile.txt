@@ -1,0 +1,32 @@
+AWS::SageMaker::ModelPackage ValidationProfile
+Contains data, such as the inputs and targeted instance types that are used in the process of validating the model package.
+The data provided in the validation profile is made available to your buyers on AWS Marketplace.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ProfileName](#cfn-sagemaker-modelpackage-validationprofile-profilename)" : String,
+  "[TransformJobDefinition](#cfn-sagemaker-modelpackage-validationprofile-transformjobdefinition)" : TransformJobDefinition
+}
+
+YAML
+
+  [ProfileName](#cfn-sagemaker-modelpackage-validationprofile-profilename): String
+  [TransformJobDefinition](#cfn-sagemaker-modelpackage-validationprofile-transformjobdefinition): 
+    TransformJobDefinition
+
+Properties
+ProfileName 
+The name of the profile for the model package. 
+Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$ 
+Update requires: Replacement
+TransformJobDefinition 
+The TransformJobDefinition object that describes the transform job used for the validation of the model package. 
+Required: Yes 
+Type: TransformJobDefinition 
+Update requires: Replacement

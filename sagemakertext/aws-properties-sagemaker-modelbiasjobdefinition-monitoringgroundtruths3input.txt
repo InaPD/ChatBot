@@ -1,0 +1,22 @@
+AWS::SageMaker::ModelBiasJobDefinition MonitoringGroundTruthS3Input
+The ground truth labels for the dataset used for the monitoring job.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[S3Uri](#cfn-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input-s3uri)" : String
+}
+
+YAML
+
+  [S3Uri](#cfn-sagemaker-modelbiasjobdefinition-monitoringgroundtruths3input-s3uri): String
+
+Properties
+S3Uri 
+The address of the Amazon S3 location of the ground truth labels. 
+Required: Yes 
+Type: String 
+Maximum: 512 
+Pattern: ^(https|s3)://([^/]+)/?(.*)$ 
+Update requires: Replacement

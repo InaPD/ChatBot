@@ -1,0 +1,40 @@
+AWS::SageMaker::ModelPackage MetricsSource
+Details about the metrics source.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ContentDigest](#cfn-sagemaker-modelpackage-metricssource-contentdigest)" : String,
+  "[ContentType](#cfn-sagemaker-modelpackage-metricssource-contenttype)" : String,
+  "[S3Uri](#cfn-sagemaker-modelpackage-metricssource-s3uri)" : String
+}
+
+YAML
+
+  [ContentDigest](#cfn-sagemaker-modelpackage-metricssource-contentdigest): String
+  [ContentType](#cfn-sagemaker-modelpackage-metricssource-contenttype): String
+  [S3Uri](#cfn-sagemaker-modelpackage-metricssource-s3uri): String
+
+Properties
+ContentDigest 
+The hash key used for the metrics source. 
+Required: No 
+Type: String 
+Maximum: 72 
+Pattern: ^[Ss][Hh][Aa]256:[0-9a-fA-F]{64}$ 
+Update requires: Replacement
+ContentType 
+The metric source content type. 
+Required: Yes 
+Type: String 
+Maximum: 256 
+Pattern: .* 
+Update requires: Replacement
+S3Uri 
+The S3 URI for the metrics source. 
+Required: Yes 
+Type: String 
+Maximum: 1024 
+Pattern: ^(https|s3)://([^/]+)/?(.*)$ 
+Update requires: Replacement

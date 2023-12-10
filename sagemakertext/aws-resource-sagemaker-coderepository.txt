@@ -1,0 +1,56 @@
+AWS::SageMaker::CodeRepository
+Creates a Git repository as a resource in your SageMaker account. You can associate the repository with notebook instances so that you can use Git source control for the notebooks you create. The Git repository is a resource in your SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with.
+The repository can be hosted either in AWS CodeCommit or in any other Git repository.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "Type" : "AWS::SageMaker::CodeRepository",
+  "Properties" : {
+      "[CodeRepositoryName](#cfn-sagemaker-coderepository-coderepositoryname)" : String,
+      "[GitConfig](#cfn-sagemaker-coderepository-gitconfig)" : GitConfig,
+      "[Tags](#cfn-sagemaker-coderepository-tags)" : [ [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html), ... ]
+    }
+}
+
+YAML
+
+Type: AWS::SageMaker::CodeRepository
+Properties: 
+  [CodeRepositoryName](#cfn-sagemaker-coderepository-coderepositoryname): String
+  [GitConfig](#cfn-sagemaker-coderepository-gitconfig): 
+    GitConfig
+  [Tags](#cfn-sagemaker-coderepository-tags): 
+    - [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
+
+Properties
+CodeRepositoryName 
+The name of the Git repository. 
+Required: No 
+Type: String 
+Minimum: 1 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$ 
+Update requires: Replacement
+GitConfig 
+Configuration details for the Git repository, including the URL where it is located and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository. 
+Required: Yes 
+Type: GitConfig 
+Update requires: No interruption
+Tags 
+List of tags for Code Repository. 
+Required: No 
+Type: List of Tag 
+Update requires: No interruption
+Return values
+Ref
+When you pass the logical ID of this resource to the intrinsic Ref function, Ref returns the Amazon Resource Name (ARN) of the code repository.
+For more information about using the Ref function, see Ref.
+Fn::GetAtt
+The Fn::GetAtt intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+For more information about using the Fn::GetAtt intrinsic function, see Fn::GetAtt.
+Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values. 
+
+CodeRepositoryName 
+The name of the code repository, such as myCodeRepo.

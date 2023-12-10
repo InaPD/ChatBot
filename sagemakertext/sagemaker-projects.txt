@@ -1,0 +1,20 @@
+Automate MLOps with SageMaker Projects
+Create end-to-end ML solutions with CI/CD by using SageMaker projects. 
+Use SageMaker projects to create an MLOps solution to orchestrate and manage:
++ Building custom images for processing, training, and inference
++ Data preparation and feature engineering
++ Training models
++ Evaluating models
++ Deploying models
++ Monitoring and updating models
+Topics
++ Why Should You Use MLOps?
++ What is a SageMaker Project?
++ SageMaker Studio Permissions Required to Use Projects
++ Create an MLOps Project using Amazon SageMaker Studio
++ MLOps Project Templates
++ View Project Resources
++ Update an MLOps Project in Amazon SageMaker Studio
++ Delete an MLOps Project using Amazon SageMaker Studio
++ SageMaker MLOps Project Walkthrough
++ SageMaker MLOps Project Walkthrough Using Third-party Git Repos

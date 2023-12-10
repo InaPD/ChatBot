@@ -1,0 +1,30 @@
+AWS::SageMaker::InferenceExperiment ModelInfrastructureConfig
+The configuration for the infrastructure that the model will be deployed to.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[InfrastructureType](#cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-infrastructuretype)" : String,
+  "[RealTimeInferenceConfig](#cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-realtimeinferenceconfig)" : RealTimeInferenceConfig
+}
+
+YAML
+
+  [InfrastructureType](#cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-infrastructuretype): String
+  [RealTimeInferenceConfig](#cfn-sagemaker-inferenceexperiment-modelinfrastructureconfig-realtimeinferenceconfig): 
+    RealTimeInferenceConfig
+
+Properties
+InfrastructureType 
+The inference option to which to deploy your model. Possible values are the following: 
++  RealTime: Deploy to real-time inference.
+Required: Yes 
+Type: String 
+Allowed values: RealTimeInference 
+Update requires: No interruption
+RealTimeInferenceConfig 
+The infrastructure configuration for deploying the model to real-time inference. 
+Required: Yes 
+Type: RealTimeInferenceConfig 
+Update requires: No interruption

@@ -1,0 +1,34 @@
+AWS::SageMaker::ModelCard BusinessDetails
+Information about how the model supports business goals.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[BusinessProblem](#cfn-sagemaker-modelcard-businessdetails-businessproblem)" : String,
+  "[BusinessStakeholders](#cfn-sagemaker-modelcard-businessdetails-businessstakeholders)" : String,
+  "[LineOfBusiness](#cfn-sagemaker-modelcard-businessdetails-lineofbusiness)" : String
+}
+
+YAML
+
+  [BusinessProblem](#cfn-sagemaker-modelcard-businessdetails-businessproblem): String
+  [BusinessStakeholders](#cfn-sagemaker-modelcard-businessdetails-businessstakeholders): String
+  [LineOfBusiness](#cfn-sagemaker-modelcard-businessdetails-lineofbusiness): String
+
+Properties
+BusinessProblem 
+The specific business problem that the model is trying to solve. 
+Required: No 
+Type: String 
+Update requires: No interruption
+BusinessStakeholders 
+The relevant stakeholders for the model. 
+Required: No 
+Type: String 
+Update requires: No interruption
+LineOfBusiness 
+The broader business need that the model is serving. 
+Required: No 
+Type: String 
+Update requires: No interruption

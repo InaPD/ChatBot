@@ -1,0 +1,64 @@
+AWS::SageMaker::ModelPackageGroup
+A group of versioned models in the model registry.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "Type" : "AWS::SageMaker::ModelPackageGroup",
+  "Properties" : {
+      "[ModelPackageGroupDescription](#cfn-sagemaker-modelpackagegroup-modelpackagegroupdescription)" : String,
+      "[ModelPackageGroupName](#cfn-sagemaker-modelpackagegroup-modelpackagegroupname)" : String,
+      "[ModelPackageGroupPolicy](#cfn-sagemaker-modelpackagegroup-modelpackagegrouppolicy)" : Json,
+      "[Tags](#cfn-sagemaker-modelpackagegroup-tags)" : [ [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html), ... ]
+    }
+}
+
+YAML
+
+Type: AWS::SageMaker::ModelPackageGroup
+Properties: 
+  [ModelPackageGroupDescription](#cfn-sagemaker-modelpackagegroup-modelpackagegroupdescription): String
+  [ModelPackageGroupName](#cfn-sagemaker-modelpackagegroup-modelpackagegroupname): String
+  [ModelPackageGroupPolicy](#cfn-sagemaker-modelpackagegroup-modelpackagegrouppolicy): Json
+  [Tags](#cfn-sagemaker-modelpackagegroup-tags): 
+    - [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
+
+Properties
+ModelPackageGroupDescription 
+The description for the model group. 
+Required: No 
+Type: String 
+Maximum: 1024 
+Pattern: [\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}]* 
+Update requires: Replacement
+ModelPackageGroupName 
+The name of the model group. 
+Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$ 
+Update requires: Replacement
+ModelPackageGroupPolicy 
+A resouce policy to control access to a model group. For information about resoure policies, see Identity-based policies and resource-based policies in the AWS Identity and Access Management User Guide.. 
+Required: No 
+Type: Json 
+Update requires: No interruption
+Tags 
+An array of key-value pairs to apply to this resource. 
+For more information, see Tag. 
+Required: No 
+Type: List of Tag 
+Maximum: 50 
+Update requires: No interruption
+Return values
+Ref
+Fn::GetAtt
+
+CreationTime 
+The time when the model group was created.
+ModelPackageGroupArn 
+The Amazon Resource Name (ARN) of the model group.
+ModelPackageGroupStatus 
+The status of the model group.

@@ -1,0 +1,107 @@
+AWS::SageMaker::Project
+Creates a machine learning (ML) project that can contain one or more templates that set up an ML pipeline from training to deploying an approved model.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "Type" : "AWS::SageMaker::Project",
+  "Properties" : {
+      "[ProjectDescription](#cfn-sagemaker-project-projectdescription)" : String,
+      "[ProjectName](#cfn-sagemaker-project-projectname)" : String,
+      "[ServiceCatalogProvisioningDetails](#cfn-sagemaker-project-servicecatalogprovisioningdetails)" : ServiceCatalogProvisioningDetails,
+      "[Tags](#cfn-sagemaker-project-tags)" : [ [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html), ... ]
+    }
+}
+
+YAML
+
+Type: AWS::SageMaker::Project
+Properties: 
+  [ProjectDescription](#cfn-sagemaker-project-projectdescription): String
+  [ProjectName](#cfn-sagemaker-project-projectname): String
+  [ServiceCatalogProvisioningDetails](#cfn-sagemaker-project-servicecatalogprovisioningdetails): 
+    ServiceCatalogProvisioningDetails
+  [Tags](#cfn-sagemaker-project-tags): 
+    - [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
+
+Properties
+ProjectDescription 
+The description of the project. 
+Required: No 
+Type: String 
+Maximum: 1024 
+Pattern: [\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}]* 
+Update requires: Replacement
+ProjectName 
+The name of the project. 
+Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 32 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,31} 
+Update requires: Replacement
+ServiceCatalogProvisioningDetails 
+The product ID and provisioning artifact ID to provision a service catalog. For information, see What is AWS Service Catalog. 
+Required: Yes 
+Type: ServiceCatalogProvisioningDetails 
+Update requires: Replacement
+Tags 
+A list of key-value pairs to apply to this resource. 
+For more information, see Resource Tag and Using Cost Allocation Tags in the * AWS Billing and Cost Management User Guide. 
+*Required: No 
+Type: List of Tag 
+Update requires: Replacement
+Return values
+Ref
+Fn::GetAtt
+
+CreationTime 
+The time that the project was created.
+ProjectArn 
+The Amazon Resource Name (ARN) of the project.
+ProjectId 
+The ID of the project. This ID is prepended to all entities associated with this project.
+ProjectStatus 
+The status of the project.
+ServiceCatalogProvisionedProductDetails 
+The product ID and status message of the projet as a service catalog provisioned product. For information, see What is AWS Service Catalog.
+ServiceCatalogProvisionedProductDetails.ProvisionedProductId 
+Property description not available.
+ServiceCatalogProvisionedProductDetails.ProvisionedProductStatusMessage 
+Property description not available.
+Examples
+SageMaker Project Example
+The following example creates a SageMaker Project.
+JSON
+
+{
+   "Description": "AWS SageMaker Project basic template",
+   "Resources": {
+      "SampleProject": {
+         "Type": "AWS::SageMaker::Project",
+         "Properties": {
+            "ProjectName": "project1",
+            "ProjectDescription": "Project Description",
+            "ServiceCatalogProvisioningDetails": {
+               "ProductId": "prod-53ibyqbj2cgmo",
+               "ProvisioningArtifactId": "pa-sm4pjfuzictpe"
+            }
+         }
+      }
+   }
+}
+
+YAML
+```
+Description: AWS SageMaker Project basic template
+Resources:
+SampleProject:
+    Type: AWS::SageMaker::Project
+    Properties:
+      ProjectName: "SampleProject"
+      ProjectDescription: "Project Description"
+      ServiceCatalogProvisioningDetails:
+        ProductId: "prod-53ibyqbj2cgmo"
+        ProvisioningArtifactId: "pa-sm4pjfuzictpe"
+```

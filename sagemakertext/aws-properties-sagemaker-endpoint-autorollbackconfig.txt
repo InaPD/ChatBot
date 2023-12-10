@@ -1,0 +1,22 @@
+AWS::SageMaker::Endpoint AutoRollbackConfig
+Automatic rollback configuration for handling endpoint deployment failures and recovery.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Alarms](#cfn-sagemaker-endpoint-autorollbackconfig-alarms)" : [ Alarm, ... ]
+}
+
+YAML
+
+  [Alarms](#cfn-sagemaker-endpoint-autorollbackconfig-alarms): 
+    - Alarm
+
+Properties
+Alarms 
+List of CloudWatch alarms in your account that are configured to monitor metrics on an endpoint. If any alarms are tripped during a deployment, SageMaker rolls back the deployment. 
+Required: Yes 
+Type: List of Alarm 
+Maximum: 10 
+Update requires: No interruption

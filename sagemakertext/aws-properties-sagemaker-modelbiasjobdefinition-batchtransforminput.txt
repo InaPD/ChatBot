@@ -1,0 +1,91 @@
+AWS::SageMaker::ModelBiasJobDefinition BatchTransformInput
+The BatchTransformInput property type specifies Property description not available. for an AWS::SageMaker::ModelBiasJobDefinition.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[DataCapturedDestinationS3Uri](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-datacaptureddestinations3uri)" : String,
+  "[DatasetFormat](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-datasetformat)" : DatasetFormat,
+  "[EndTimeOffset](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-endtimeoffset)" : String,
+  "[FeaturesAttribute](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-featuresattribute)" : String,
+  "[InferenceAttribute](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-inferenceattribute)" : String,
+  "[LocalPath](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-localpath)" : String,
+  "[ProbabilityAttribute](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-probabilityattribute)" : String,
+  "[ProbabilityThresholdAttribute](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-probabilitythresholdattribute)" : Double,
+  "[S3DataDistributionType](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-s3datadistributiontype)" : String,
+  "[S3InputMode](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-s3inputmode)" : String,
+  "[StartTimeOffset](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-starttimeoffset)" : String
+}
+
+YAML
+
+  [DataCapturedDestinationS3Uri](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-datacaptureddestinations3uri): String
+  [DatasetFormat](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-datasetformat): 
+    DatasetFormat
+  [EndTimeOffset](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-endtimeoffset): String
+  [FeaturesAttribute](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-featuresattribute): String
+  [InferenceAttribute](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-inferenceattribute): String
+  [LocalPath](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-localpath): String
+  [ProbabilityAttribute](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-probabilityattribute): String
+  [ProbabilityThresholdAttribute](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-probabilitythresholdattribute): Double
+  [S3DataDistributionType](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-s3datadistributiontype): String
+  [S3InputMode](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-s3inputmode): String
+  [StartTimeOffset](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-starttimeoffset): String
+
+Properties
+DataCapturedDestinationS3Uri 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+DatasetFormat 
+Property description not available. 
+Required: Yes 
+Type: DatasetFormat 
+Update requires: Replacement
+EndTimeOffset 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+FeaturesAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+InferenceAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+LocalPath 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+ProbabilityAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+ProbabilityThresholdAttribute 
+Property description not available. 
+Required: No 
+Type: Double 
+Update requires: Replacement
+S3DataDistributionType 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+S3InputMode 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+StartTimeOffset 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement

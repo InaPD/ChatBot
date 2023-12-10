@@ -1,0 +1,28 @@
+AWS::SageMaker::Pipeline PipelineDefinition
+The PipelineDefinition property type specifies Property description not available. for an AWS::SageMaker::Pipeline.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[PipelineDefinitionBody](#cfn-sagemaker-pipeline-pipelinedefinition-pipelinedefinitionbody)" : String,
+  "[PipelineDefinitionS3Location](#cfn-sagemaker-pipeline-pipelinedefinition-pipelinedefinitions3location)" : S3Location
+}
+
+YAML
+
+  [PipelineDefinitionBody](#cfn-sagemaker-pipeline-pipelinedefinition-pipelinedefinitionbody): String
+  [PipelineDefinitionS3Location](#cfn-sagemaker-pipeline-pipelinedefinition-pipelinedefinitions3location): 
+    S3Location
+
+Properties
+PipelineDefinitionBody 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: No interruption
+PipelineDefinitionS3Location 
+Property description not available. 
+Required: No 
+Type: S3Location 
+Update requires: No interruption

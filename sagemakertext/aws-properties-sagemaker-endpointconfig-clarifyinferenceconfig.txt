@@ -1,0 +1,93 @@
+AWS::SageMaker::EndpointConfig ClarifyInferenceConfig
+The ClarifyInferenceConfig property type specifies Property description not available. for an AWS::SageMaker::EndpointConfig.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ContentTemplate](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-contenttemplate)" : String,
+  "[FeatureHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featureheaders)" : [ ClarifyHeader, ... ],
+  "[FeaturesAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuresattribute)" : String,
+  "[FeatureTypes](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuretypes)" : [ ClarifyFeatureType, ... ],
+  "[LabelAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelattribute)" : String,
+  "[LabelHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelheaders)" : [ ClarifyHeader, ... ],
+  "[LabelIndex](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelindex)" : Integer,
+  "[MaxPayloadInMB](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-maxpayloadinmb)" : Integer,
+  "[MaxRecordCount](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-maxrecordcount)" : Integer,
+  "[ProbabilityAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-probabilityattribute)" : String,
+  "[ProbabilityIndex](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-probabilityindex)" : Integer
+}
+
+YAML
+
+  [ContentTemplate](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-contenttemplate): String
+  [FeatureHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featureheaders): 
+    - ClarifyHeader
+  [FeaturesAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuresattribute): String
+  [FeatureTypes](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-featuretypes): 
+    - ClarifyFeatureType
+  [LabelAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelattribute): String
+  [LabelHeaders](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelheaders): 
+    - ClarifyHeader
+  [LabelIndex](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-labelindex): Integer
+  [MaxPayloadInMB](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-maxpayloadinmb): Integer
+  [MaxRecordCount](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-maxrecordcount): Integer
+  [ProbabilityAttribute](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-probabilityattribute): String
+  [ProbabilityIndex](#cfn-sagemaker-endpointconfig-clarifyinferenceconfig-probabilityindex): Integer
+
+Properties
+ContentTemplate 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+FeatureHeaders 
+Property description not available. 
+Required: No 
+Type: List of ClarifyHeader 
+Update requires: Replacement
+FeaturesAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+FeatureTypes 
+Property description not available. 
+Required: No 
+Type: List of ClarifyFeatureType 
+Update requires: Replacement
+LabelAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+LabelHeaders 
+Property description not available. 
+Required: No 
+Type: List of ClarifyHeader 
+Update requires: Replacement
+LabelIndex 
+Property description not available. 
+Required: No 
+Type: Integer 
+Update requires: Replacement
+MaxPayloadInMB 
+Property description not available. 
+Required: No 
+Type: Integer 
+Update requires: Replacement
+MaxRecordCount 
+Property description not available. 
+Required: No 
+Type: Integer 
+Update requires: Replacement
+ProbabilityAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+ProbabilityIndex 
+Property description not available. 
+Required: No 
+Type: Integer 
+Update requires: Replacement

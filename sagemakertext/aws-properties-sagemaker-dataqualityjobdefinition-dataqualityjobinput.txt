@@ -1,0 +1,29 @@
+AWS::SageMaker::DataQualityJobDefinition DataQualityJobInput
+The input for the data quality monitoring job. Currently endpoints are supported for input.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[BatchTransformInput](#cfn-sagemaker-dataqualityjobdefinition-dataqualityjobinput-batchtransforminput)" : BatchTransformInput,
+  "[EndpointInput](#cfn-sagemaker-dataqualityjobdefinition-dataqualityjobinput-endpointinput)" : EndpointInput
+}
+
+YAML
+
+  [BatchTransformInput](#cfn-sagemaker-dataqualityjobdefinition-dataqualityjobinput-batchtransforminput): 
+    BatchTransformInput
+  [EndpointInput](#cfn-sagemaker-dataqualityjobdefinition-dataqualityjobinput-endpointinput): 
+    EndpointInput
+
+Properties
+BatchTransformInput 
+Property description not available. 
+Required: No 
+Type: BatchTransformInput 
+Update requires: Replacement
+EndpointInput 
+Input object for the endpoint 
+Required: No 
+Type: EndpointInput 
+Update requires: Replacement

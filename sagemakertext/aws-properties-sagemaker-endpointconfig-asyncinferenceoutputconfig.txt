@@ -1,0 +1,35 @@
+AWS::SageMaker::EndpointConfig AsyncInferenceOutputConfig
+Specifies the configuration for asynchronous inference invocation outputs.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[KmsKeyId](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-kmskeyid)" : String,
+  "[NotificationConfig](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-notificationconfig)" : AsyncInferenceNotificationConfig,
+  "[S3OutputPath](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-s3outputpath)" : String
+}
+
+YAML
+
+  [KmsKeyId](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-kmskeyid): String
+  [NotificationConfig](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-notificationconfig): 
+    AsyncInferenceNotificationConfig
+  [S3OutputPath](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-s3outputpath): String
+
+Properties
+KmsKeyId 
+The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the asynchronous inference output in Amazon S3. 
+Required: No 
+Type: String 
+Update requires: Replacement
+NotificationConfig 
+Specifies the configuration for notifications of inference results for asynchronous inference. 
+Required: No 
+Type: AsyncInferenceNotificationConfig 
+Update requires: Replacement
+S3OutputPath 
+The Amazon S3 location to upload inference responses to. 
+Required: Yes 
+Type: String 
+Update requires: Replacement

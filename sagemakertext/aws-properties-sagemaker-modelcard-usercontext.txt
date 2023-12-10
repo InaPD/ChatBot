@@ -1,0 +1,34 @@
+AWS::SageMaker::ModelCard UserContext
+Information about the user who created or modified an experiment, trial, trial component, lineage group, project, or model card.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[DomainId](#cfn-sagemaker-modelcard-usercontext-domainid)" : String,
+  "[UserProfileArn](#cfn-sagemaker-modelcard-usercontext-userprofilearn)" : String,
+  "[UserProfileName](#cfn-sagemaker-modelcard-usercontext-userprofilename)" : String
+}
+
+YAML
+
+  [DomainId](#cfn-sagemaker-modelcard-usercontext-domainid): String
+  [UserProfileArn](#cfn-sagemaker-modelcard-usercontext-userprofilearn): String
+  [UserProfileName](#cfn-sagemaker-modelcard-usercontext-userprofilename): String
+
+Properties
+DomainId 
+The domain associated with the user. 
+Required: No 
+Type: String 
+Update requires: No interruption
+UserProfileArn 
+The Amazon Resource Name (ARN) of the user's profile. 
+Required: No 
+Type: String 
+Update requires: No interruption
+UserProfileName 
+The name of the user's profile. 
+Required: No 
+Type: String 
+Update requires: No interruption

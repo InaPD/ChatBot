@@ -1,0 +1,84 @@
+AWS::SageMaker::ModelQualityJobDefinition BatchTransformInput
+The BatchTransformInput property type specifies Property description not available. for an AWS::SageMaker::ModelQualityJobDefinition.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[DataCapturedDestinationS3Uri](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-datacaptureddestinations3uri)" : String,
+  "[DatasetFormat](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-datasetformat)" : DatasetFormat,
+  "[EndTimeOffset](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-endtimeoffset)" : String,
+  "[InferenceAttribute](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-inferenceattribute)" : String,
+  "[LocalPath](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-localpath)" : String,
+  "[ProbabilityAttribute](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-probabilityattribute)" : String,
+  "[ProbabilityThresholdAttribute](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-probabilitythresholdattribute)" : Double,
+  "[S3DataDistributionType](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-s3datadistributiontype)" : String,
+  "[S3InputMode](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-s3inputmode)" : String,
+  "[StartTimeOffset](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-starttimeoffset)" : String
+}
+
+YAML
+
+  [DataCapturedDestinationS3Uri](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-datacaptureddestinations3uri): String
+  [DatasetFormat](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-datasetformat): 
+    DatasetFormat
+  [EndTimeOffset](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-endtimeoffset): String
+  [InferenceAttribute](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-inferenceattribute): String
+  [LocalPath](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-localpath): String
+  [ProbabilityAttribute](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-probabilityattribute): String
+  [ProbabilityThresholdAttribute](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-probabilitythresholdattribute): Double
+  [S3DataDistributionType](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-s3datadistributiontype): String
+  [S3InputMode](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-s3inputmode): String
+  [StartTimeOffset](#cfn-sagemaker-modelqualityjobdefinition-batchtransforminput-starttimeoffset): String
+
+Properties
+DataCapturedDestinationS3Uri 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+DatasetFormat 
+Property description not available. 
+Required: Yes 
+Type: DatasetFormat 
+Update requires: Replacement
+EndTimeOffset 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+InferenceAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+LocalPath 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+ProbabilityAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+ProbabilityThresholdAttribute 
+Property description not available. 
+Required: No 
+Type: Double 
+Update requires: Replacement
+S3DataDistributionType 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+S3InputMode 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+StartTimeOffset 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement

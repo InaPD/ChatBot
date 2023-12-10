@@ -1,0 +1,50 @@
+AWS::SageMaker::EndpointConfig ClarifyShapConfig
+The ClarifyShapConfig property type specifies Property description not available. for an AWS::SageMaker::EndpointConfig.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[NumberOfSamples](#cfn-sagemaker-endpointconfig-clarifyshapconfig-numberofsamples)" : Integer,
+  "[Seed](#cfn-sagemaker-endpointconfig-clarifyshapconfig-seed)" : Integer,
+  "[ShapBaselineConfig](#cfn-sagemaker-endpointconfig-clarifyshapconfig-shapbaselineconfig)" : ClarifyShapBaselineConfig,
+  "[TextConfig](#cfn-sagemaker-endpointconfig-clarifyshapconfig-textconfig)" : ClarifyTextConfig,
+  "[UseLogit](#cfn-sagemaker-endpointconfig-clarifyshapconfig-uselogit)" : Boolean
+}
+
+YAML
+
+  [NumberOfSamples](#cfn-sagemaker-endpointconfig-clarifyshapconfig-numberofsamples): Integer
+  [Seed](#cfn-sagemaker-endpointconfig-clarifyshapconfig-seed): Integer
+  [ShapBaselineConfig](#cfn-sagemaker-endpointconfig-clarifyshapconfig-shapbaselineconfig): 
+    ClarifyShapBaselineConfig
+  [TextConfig](#cfn-sagemaker-endpointconfig-clarifyshapconfig-textconfig): 
+    ClarifyTextConfig
+  [UseLogit](#cfn-sagemaker-endpointconfig-clarifyshapconfig-uselogit): Boolean
+
+Properties
+NumberOfSamples 
+Property description not available. 
+Required: No 
+Type: Integer 
+Update requires: Replacement
+Seed 
+Property description not available. 
+Required: No 
+Type: Integer 
+Update requires: Replacement
+ShapBaselineConfig 
+Property description not available. 
+Required: Yes 
+Type: ClarifyShapBaselineConfig 
+Update requires: Replacement
+TextConfig 
+Property description not available. 
+Required: No 
+Type: ClarifyTextConfig 
+Update requires: Replacement
+UseLogit 
+Property description not available. 
+Required: No 
+Type: Boolean 
+Update requires: Replacement

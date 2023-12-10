@@ -1,0 +1,20 @@
+AWS::SageMaker::ModelCard SecurityConfig
+The security configuration used to protect model card data.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[KmsKeyId](#cfn-sagemaker-modelcard-securityconfig-kmskeyid)" : String
+}
+
+YAML
+
+  [KmsKeyId](#cfn-sagemaker-modelcard-securityconfig-kmskeyid): String
+
+Properties
+KmsKeyId 
+A AWS Key Management Service key ID used to encrypt a model card. 
+Required: No 
+Type: String 
+Update requires: Replacement

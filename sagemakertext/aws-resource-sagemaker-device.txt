@@ -1,0 +1,49 @@
+AWS::SageMaker::Device
+The AWS::SageMaker::Device resource is an Amazon SageMaker resource type that allows you to register your Devices against an existing SageMaker Edge Manager DeviceFleet. Each device must be listed individually in the CFN specification.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "Type" : "AWS::SageMaker::Device",
+  "Properties" : {
+      "[Device](#cfn-sagemaker-device-device)" : Device,
+      "[DeviceFleetName](#cfn-sagemaker-device-devicefleetname)" : String,
+      "[Tags](#cfn-sagemaker-device-tags)" : [ [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html), ... ]
+    }
+}
+
+YAML
+
+Type: AWS::SageMaker::Device
+Properties: 
+  [Device](#cfn-sagemaker-device-device): 
+    Device
+  [DeviceFleetName](#cfn-sagemaker-device-devicefleetname): String
+  [Tags](#cfn-sagemaker-device-tags): 
+    - [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
+
+Properties
+Device 
+Edge device you want to create. 
+Required: No 
+Type: Device 
+Update requires: No interruption
+DeviceFleetName 
+The name of the fleet the device belongs to. 
+Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$ 
+Update requires: No interruption
+Tags 
+An array of key-value pairs that contain metadata to help you categorize and organize your devices. Each tag consists of a key and a value, both of which you define. 
+Required: No 
+Type: List of Tag 
+Maximum: 50 
+Update requires: No interruption
+Return values
+Ref
+When you pass the logical ID of this resource to the intrinsic Ref function, Ref returns the DeviceFleetName.
+For more information about using the Ref function, see Ref.

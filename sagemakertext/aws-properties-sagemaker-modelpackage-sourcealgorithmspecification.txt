@@ -1,0 +1,22 @@
+AWS::SageMaker::ModelPackage SourceAlgorithmSpecification
+A list of algorithms that were used to create a model package.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[SourceAlgorithms](#cfn-sagemaker-modelpackage-sourcealgorithmspecification-sourcealgorithms)" : [ SourceAlgorithm, ... ]
+}
+
+YAML
+
+  [SourceAlgorithms](#cfn-sagemaker-modelpackage-sourcealgorithmspecification-sourcealgorithms): 
+    - SourceAlgorithm
+
+Properties
+SourceAlgorithms 
+A list of the algorithms that were used to create a model package. 
+Required: Yes 
+Type: List of SourceAlgorithm 
+Maximum: 1 
+Update requires: Replacement

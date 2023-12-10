@@ -1,0 +1,20 @@
+AWS::SageMaker::DataQualityJobDefinition StatisticsResource
+The statistics resource for a monitoring job.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[S3Uri](#cfn-sagemaker-dataqualityjobdefinition-statisticsresource-s3uri)" : String
+}
+
+YAML
+
+  [S3Uri](#cfn-sagemaker-dataqualityjobdefinition-statisticsresource-s3uri): String
+
+Properties
+S3Uri 
+The Amazon S3 URI for the statistics resource. 
+Required: No 
+Type: String 
+Update requires: Replacement

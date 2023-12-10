@@ -1,0 +1,30 @@
+AWS::SageMaker::Domain RSessionAppSettings
+A collection of settings that apply to an RSessionGateway app.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[CustomImages](#cfn-sagemaker-domain-rsessionappsettings-customimages)" : [ CustomImage, ... ],
+  "[DefaultResourceSpec](#cfn-sagemaker-domain-rsessionappsettings-defaultresourcespec)" : ResourceSpec
+}
+
+YAML
+
+  [CustomImages](#cfn-sagemaker-domain-rsessionappsettings-customimages): 
+    - CustomImage
+  [DefaultResourceSpec](#cfn-sagemaker-domain-rsessionappsettings-defaultresourcespec): 
+    ResourceSpec
+
+Properties
+CustomImages 
+A list of custom SageMaker images that are configured to run as a RSession app. 
+Required: No 
+Type: List of CustomImage 
+Maximum: 200 
+Update requires: No interruption
+DefaultResourceSpec 
+Specifies the ARNs of a SageMaker image and SageMaker image version, and the instance type that the version runs on. 
+Required: No 
+Type: ResourceSpec 
+Update requires: No interruption

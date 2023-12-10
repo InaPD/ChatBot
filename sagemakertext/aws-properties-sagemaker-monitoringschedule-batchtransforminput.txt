@@ -1,0 +1,49 @@
+AWS::SageMaker::MonitoringSchedule BatchTransformInput
+The BatchTransformInput property type specifies Property description not available. for an AWS::SageMaker::MonitoringSchedule.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[DataCapturedDestinationS3Uri](#cfn-sagemaker-monitoringschedule-batchtransforminput-datacaptureddestinations3uri)" : String,
+  "[DatasetFormat](#cfn-sagemaker-monitoringschedule-batchtransforminput-datasetformat)" : DatasetFormat,
+  "[LocalPath](#cfn-sagemaker-monitoringschedule-batchtransforminput-localpath)" : String,
+  "[S3DataDistributionType](#cfn-sagemaker-monitoringschedule-batchtransforminput-s3datadistributiontype)" : String,
+  "[S3InputMode](#cfn-sagemaker-monitoringschedule-batchtransforminput-s3inputmode)" : String
+}
+
+YAML
+
+  [DataCapturedDestinationS3Uri](#cfn-sagemaker-monitoringschedule-batchtransforminput-datacaptureddestinations3uri): String
+  [DatasetFormat](#cfn-sagemaker-monitoringschedule-batchtransforminput-datasetformat): 
+    DatasetFormat
+  [LocalPath](#cfn-sagemaker-monitoringschedule-batchtransforminput-localpath): String
+  [S3DataDistributionType](#cfn-sagemaker-monitoringschedule-batchtransforminput-s3datadistributiontype): String
+  [S3InputMode](#cfn-sagemaker-monitoringschedule-batchtransforminput-s3inputmode): String
+
+Properties
+DataCapturedDestinationS3Uri 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: No interruption
+DatasetFormat 
+Property description not available. 
+Required: Yes 
+Type: DatasetFormat 
+Update requires: No interruption
+LocalPath 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: No interruption
+S3DataDistributionType 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: No interruption
+S3InputMode 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: No interruption

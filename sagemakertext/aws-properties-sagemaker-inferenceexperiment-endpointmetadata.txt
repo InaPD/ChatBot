@@ -1,0 +1,39 @@
+AWS::SageMaker::InferenceExperiment EndpointMetadata
+The metadata of the endpoint.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[EndpointConfigName](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointconfigname)" : String,
+  "[EndpointName](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointname)" : String,
+  "[EndpointStatus](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointstatus)" : String
+}
+
+YAML
+
+  [EndpointConfigName](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointconfigname): String
+  [EndpointName](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointname): String
+  [EndpointStatus](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointstatus): String
+
+Properties
+EndpointConfigName 
+The name of the endpoint configuration. 
+Required: No 
+Type: String 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62} 
+Update requires: No interruption
+EndpointName 
+The name of the endpoint. 
+Required: Yes 
+Type: String 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62} 
+Update requires: No interruption
+EndpointStatus 
+ The status of the endpoint. For possible values of the status of an endpoint, see https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-inferenceexperiment-endpointmetadata.html#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointstatus. 
+Required: No 
+Type: String 
+Allowed values: Creating | Deleting | Failed | InService | OutOfService | RollingBack | SystemUpdating | Updating 
+Update requires: No interruption

@@ -1,0 +1,32 @@
+AWS::SageMaker::Project ProvisioningParameter
+A key value pair used when you provision a project as a service catalog product. For information, see What is AWS Service Catalog.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Key](#cfn-sagemaker-project-provisioningparameter-key)" : String,
+  "[Value](#cfn-sagemaker-project-provisioningparameter-value)" : String
+}
+
+YAML
+
+  [Key](#cfn-sagemaker-project-provisioningparameter-key): String
+  [Value](#cfn-sagemaker-project-provisioningparameter-value): String
+
+Properties
+Key 
+The key that identifies a provisioning parameter. 
+Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 1000 
+Pattern: .* 
+Update requires: Replacement
+Value 
+The value of the provisioning parameter. 
+Required: Yes 
+Type: String 
+Maximum: 4096 
+Pattern: .* 
+Update requires: Replacement

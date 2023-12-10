@@ -1,0 +1,76 @@
+AWS::SageMaker::Image
+Creates a custom SageMaker image. A SageMaker image is a set of image versions. Each image version represents a container image stored in Amazon Elastic Container Registry (ECR). For more information, see Bring your own SageMaker image.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "Type" : "AWS::SageMaker::Image",
+  "Properties" : {
+      "[ImageDescription](#cfn-sagemaker-image-imagedescription)" : String,
+      "[ImageDisplayName](#cfn-sagemaker-image-imagedisplayname)" : String,
+      "[ImageName](#cfn-sagemaker-image-imagename)" : String,
+      "[ImageRoleArn](#cfn-sagemaker-image-imagerolearn)" : String,
+      "[Tags](#cfn-sagemaker-image-tags)" : [ [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html), ... ]
+    }
+}
+
+YAML
+
+Type: AWS::SageMaker::Image
+Properties: 
+  [ImageDescription](#cfn-sagemaker-image-imagedescription): String
+  [ImageDisplayName](#cfn-sagemaker-image-imagedisplayname): String
+  [ImageName](#cfn-sagemaker-image-imagename): String
+  [ImageRoleArn](#cfn-sagemaker-image-imagerolearn): String
+  [Tags](#cfn-sagemaker-image-tags): 
+    - [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
+
+Properties
+ImageDescription 
+The description of the image. 
+Length Constraints: Minimum length of 1. Maximum length of 512. 
+Pattern: .* 
+Required: No 
+Type: String 
+Update requires: No interruption
+ImageDisplayName 
+The display name of the image. 
+Length Constraints: Minimum length of 1. Maximum length of 128. 
+Pattern: ^\S(.*\S)?$ 
+Required: No 
+Type: String 
+Update requires: No interruption
+ImageName 
+The name of the Image. Must be unique by region in your account. 
+Length Constraints: Minimum length of 1. Maximum length of 63. 
+Pattern: ^[a-zA-Z0-9]([-.]?[a-zA-Z0-9]){0,62}$ 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+ImageRoleArn 
+The Amazon Resource Name (ARN) of an IAM role that enables Amazon SageMaker to perform tasks on your behalf. 
+Length Constraints: Minimum length of 20. Maximum length of 2048. 
+Pattern: ^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$ 
+Required: Yes 
+Type: String 
+Update requires: No interruption
+Tags 
+A list of key-value pairs to apply to this resource. 
+Array Members: Minimum number of 0 items. Maximum number of 50 items. 
+Required: No 
+Type: List of Tag 
+Update requires: No interruption
+Return values
+Ref
+When you pass the logical ID of this resource to the intrinsic Ref function, Ref returns the ImageArn.
+For more information about using the Ref function, see Ref.
+Fn::GetAtt
+The Fn::GetAtt intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+For more information about using the Fn::GetAtt intrinsic function, see Fn::GetAtt.
+
+ImageArn 
+The Amazon Resource Name (ARN) of the image. 
+Type: String 
+Length Constraints: Maximum length of 256. 
+Pattern: ^arn:aws(-[\w]+)*:sagemaker:.+:[0-9]{12}:image/[a-z0-9]([-.]?[a-z0-9])*$

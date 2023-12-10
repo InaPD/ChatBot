@@ -1,0 +1,51 @@
+AWS::SageMaker::Project ServiceCatalogProvisioningDetails
+Details that you specify to provision a service catalog product. For information about service catalog, see What is AWS Service Catalog.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[PathId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-pathid)" : String,
+  "[ProductId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-productid)" : String,
+  "[ProvisioningArtifactId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningartifactid)" : String,
+  "[ProvisioningParameters](#cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningparameters)" : [ ProvisioningParameter, ... ]
+}
+
+YAML
+
+  [PathId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-pathid): String
+  [ProductId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-productid): String
+  [ProvisioningArtifactId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningartifactid): String
+  [ProvisioningParameters](#cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningparameters): 
+    - ProvisioningParameter
+
+Properties
+PathId 
+The path identifier of the product. This value is optional if the product has a default path, and required if the product has more than one path. 
+Required: No 
+Type: String 
+Minimum: 1 
+Maximum: 100 
+Pattern: ^[a-zA-Z0-9_\-]* 
+Update requires: Replacement
+ProductId 
+The ID of the product to provision. 
+Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 100 
+Pattern: ^[a-zA-Z0-9_\-]* 
+Update requires: Replacement
+ProvisioningArtifactId 
+The ID of the provisioning artifact. 
+Required: No 
+Type: String 
+Minimum: 1 
+Maximum: 100 
+Pattern: ^[a-zA-Z0-9_\-]* 
+Update requires: Replacement
+ProvisioningParameters 
+A list of key value pairs that you specify when you provision a product. 
+Required: No 
+Type: List of ProvisioningParameter 
+Update requires: Replacement

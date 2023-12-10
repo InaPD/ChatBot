@@ -1,0 +1,59 @@
+AWS::SageMaker::ImageVersion
+Creates a version of the SageMaker image specified by ImageName. The version represents the Amazon Container Registry (ECR) container image specified by BaseImage.
+Note 
+You can use the DependsOn attribute to specify that the creation of a specific resource follows another. You can use it for the following use cases. For more information, see DependsOn attribute. 
+1. DependsOn can be used to establish a parent/child relationship between ImageVersion and Image where the ImageVersion DependsOnthe Image. 
+2. DependsOn can be used to establish order among ImageVersions within the same Image namespace. For example, if ImageVersionB DependsOn ImageVersionA and both share the same parent Image, then ImageVersionA is version N and ImageVersionB is N+1.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "Type" : "AWS::SageMaker::ImageVersion",
+  "Properties" : {
+      "[BaseImage](#cfn-sagemaker-imageversion-baseimage)" : String,
+      "[ImageName](#cfn-sagemaker-imageversion-imagename)" : String
+    }
+}
+
+YAML
+
+Type: AWS::SageMaker::ImageVersion
+Properties: 
+  [BaseImage](#cfn-sagemaker-imageversion-baseimage): String
+  [ImageName](#cfn-sagemaker-imageversion-imagename): String
+
+Properties
+BaseImage 
+The container image that the SageMaker image version is based on. 
+Length Constraints: Minimum length of 1. Maximum length of 255. 
+Pattern: .* 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+ImageName 
+The name of the parent image. 
+Length Constraints: Minimum length of 1. Maximum length of 63. 
+Pattern: ^[a-zA-Z0-9]([-.]?[a-zA-Z0-9]){0,62}$ 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+Return values
+Ref
+When you pass the logical ID of this resource to the intrinsic Ref function, Ref returns the ImageVersionArn.
+For more information about using the Ref function, see Ref.
+Fn::GetAtt
+The Fn::GetAtt intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+For more information about using the Fn::GetAtt intrinsic function, see Fn::GetAtt.
+
+ContainerImage 
+The URI of the container image version referenced by ImageVersion.
+ImageArn 
+The Amazon Resource Name (ARN) of the parent Image.
+ImageVersionArn 
+The Amazon Resource Name (ARN) of the image version. 
+Type: String 
+Length Constraints: Maximum length of 256. 
+Pattern: ^arn:aws(-[\w]+)*:sagemaker:.+:[0-9]{12}:image-version/[a-z0-9]([-.]?[a-z0-9])*/[0-9]+$
+Version 
+The version of the image.

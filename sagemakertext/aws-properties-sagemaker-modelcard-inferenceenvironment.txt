@@ -1,0 +1,21 @@
+AWS::SageMaker::ModelCard InferenceEnvironment
+An overview of a model's inference environment.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ContainerImage](#cfn-sagemaker-modelcard-inferenceenvironment-containerimage)" : [ String, ... ]
+}
+
+YAML
+
+  [ContainerImage](#cfn-sagemaker-modelcard-inferenceenvironment-containerimage): 
+    - String
+
+Properties
+ContainerImage 
+The container used to run the inference environment. 
+Required: No 
+Type: List of String 
+Update requires: No interruption

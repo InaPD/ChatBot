@@ -1,0 +1,21 @@
+AWS::SageMaker::ModelPackage Explainability
+Contains explainability metrics for a model.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Report](#cfn-sagemaker-modelpackage-explainability-report)" : MetricsSource
+}
+
+YAML
+
+  [Report](#cfn-sagemaker-modelpackage-explainability-report): 
+    MetricsSource
+
+Properties
+Report 
+The explainability report for a model. 
+Required: No 
+Type: MetricsSource 
+Update requires: Replacement

@@ -1,0 +1,34 @@
+AWS::SageMaker::EndpointConfig ClarifyShapBaselineConfig
+The ClarifyShapBaselineConfig property type specifies Property description not available. for an AWS::SageMaker::EndpointConfig.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[MimeType](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-mimetype)" : String,
+  "[ShapBaseline](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-shapbaseline)" : String,
+  "[ShapBaselineUri](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-shapbaselineuri)" : String
+}
+
+YAML
+
+  [MimeType](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-mimetype): String
+  [ShapBaseline](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-shapbaseline): String
+  [ShapBaselineUri](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-shapbaselineuri): String
+
+Properties
+MimeType 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+ShapBaseline 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+ShapBaselineUri 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement

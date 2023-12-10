@@ -1,0 +1,27 @@
+AWS::Scheduler::Schedule SageMakerPipelineParameter
+The name and value pair of a parameter to use to start execution of a SageMaker Model Building Pipeline.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Name](#cfn-scheduler-schedule-sagemakerpipelineparameter-name)" : String,
+  "[Value](#cfn-scheduler-schedule-sagemakerpipelineparameter-value)" : String
+}
+
+YAML
+
+  [Name](#cfn-scheduler-schedule-sagemakerpipelineparameter-name): String
+  [Value](#cfn-scheduler-schedule-sagemakerpipelineparameter-value): String
+
+Properties
+Name 
+Name of parameter to start execution of a SageMaker Model Building Pipeline. 
+Required: Yes 
+Type: String 
+Update requires: No interruption
+Value 
+Value of parameter to start execution of a SageMaker Model Building Pipeline. 
+Required: Yes 
+Type: String 
+Update requires: No interruption

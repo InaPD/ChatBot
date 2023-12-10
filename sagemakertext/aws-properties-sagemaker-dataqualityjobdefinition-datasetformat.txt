@@ -1,0 +1,36 @@
+AWS::SageMaker::DataQualityJobDefinition DatasetFormat
+The DatasetFormat property type specifies Property description not available. for an AWS::SageMaker::DataQualityJobDefinition.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Csv](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-csv)" : Csv,
+  "[Json](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-json)" : Json,
+  "[Parquet](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-parquet)" : Boolean
+}
+
+YAML
+
+  [Csv](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-csv): 
+    Csv
+  [Json](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-json): 
+    Json
+  [Parquet](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-parquet): Boolean
+
+Properties
+Csv 
+Property description not available. 
+Required: No 
+Type: Csv 
+Update requires: Replacement
+Json 
+Property description not available. 
+Required: No 
+Type: Json 
+Update requires: Replacement
+Parquet 
+Property description not available. 
+Required: No 
+Type: Boolean 
+Update requires: Replacement

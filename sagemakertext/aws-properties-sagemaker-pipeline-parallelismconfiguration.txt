@@ -1,0 +1,21 @@
+AWS::SageMaker::Pipeline ParallelismConfiguration
+Configuration that controls the parallelism of the pipeline. By default, the parallelism configuration specified applies to all executions of the pipeline unless overridden.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[MaxParallelExecutionSteps](#cfn-sagemaker-pipeline-parallelismconfiguration-maxparallelexecutionsteps)" : Integer
+}
+
+YAML
+
+  [MaxParallelExecutionSteps](#cfn-sagemaker-pipeline-parallelismconfiguration-maxparallelexecutionsteps): Integer
+
+Properties
+MaxParallelExecutionSteps 
+The max number of steps that can be executed in parallel. 
+Required: Yes 
+Type: Integer 
+Minimum: 1 
+Update requires: No interruption

@@ -1,0 +1,38 @@
+AWS::SageMaker::ModelPackage ModelPackageStatusItem
+Represents the overall status of a model package.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[FailureReason](#cfn-sagemaker-modelpackage-modelpackagestatusitem-failurereason)" : String,
+  "[Name](#cfn-sagemaker-modelpackage-modelpackagestatusitem-name)" : String,
+  "[Status](#cfn-sagemaker-modelpackage-modelpackagestatusitem-status)" : String
+}
+
+YAML
+
+  [FailureReason](#cfn-sagemaker-modelpackage-modelpackagestatusitem-failurereason): String
+  [Name](#cfn-sagemaker-modelpackage-modelpackagestatusitem-name): String
+  [Status](#cfn-sagemaker-modelpackage-modelpackagestatusitem-status): String
+
+Properties
+FailureReason 
+if the overall status is Failed, the reason for the failure. 
+Required: No 
+Type: String 
+Update requires: No interruption
+Name 
+The name of the model package for which the overall status is being reported. 
+Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}$ 
+Update requires: No interruption
+Status 
+The current status. 
+Required: Yes 
+Type: String 
+Allowed values: Completed | Failed | InProgress | NotStarted 
+Update requires: No interruption

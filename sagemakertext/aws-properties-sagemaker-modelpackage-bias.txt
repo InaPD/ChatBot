@@ -1,0 +1,37 @@
+AWS::SageMaker::ModelPackage Bias
+Contains bias metrics for a model.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[PostTrainingReport](#cfn-sagemaker-modelpackage-bias-posttrainingreport)" : MetricsSource,
+  "[PreTrainingReport](#cfn-sagemaker-modelpackage-bias-pretrainingreport)" : MetricsSource,
+  "[Report](#cfn-sagemaker-modelpackage-bias-report)" : MetricsSource
+}
+
+YAML
+
+  [PostTrainingReport](#cfn-sagemaker-modelpackage-bias-posttrainingreport): 
+    MetricsSource
+  [PreTrainingReport](#cfn-sagemaker-modelpackage-bias-pretrainingreport): 
+    MetricsSource
+  [Report](#cfn-sagemaker-modelpackage-bias-report): 
+    MetricsSource
+
+Properties
+PostTrainingReport 
+The post-training bias report for a model. 
+Required: No 
+Type: MetricsSource 
+Update requires: Replacement
+PreTrainingReport 
+The pre-training bias report for a model. 
+Required: No 
+Type: MetricsSource 
+Update requires: Replacement
+Report 
+The bias report for a model 
+Required: No 
+Type: MetricsSource 
+Update requires: Replacement

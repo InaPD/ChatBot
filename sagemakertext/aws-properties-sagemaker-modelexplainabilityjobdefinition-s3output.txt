@@ -1,0 +1,34 @@
+AWS::SageMaker::ModelExplainabilityJobDefinition S3Output
+The Amazon S3 storage location where the results of a monitoring job are saved.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[LocalPath](#cfn-sagemaker-modelexplainabilityjobdefinition-s3output-localpath)" : String,
+  "[S3UploadMode](#cfn-sagemaker-modelexplainabilityjobdefinition-s3output-s3uploadmode)" : String,
+  "[S3Uri](#cfn-sagemaker-modelexplainabilityjobdefinition-s3output-s3uri)" : String
+}
+
+YAML
+
+  [LocalPath](#cfn-sagemaker-modelexplainabilityjobdefinition-s3output-localpath): String
+  [S3UploadMode](#cfn-sagemaker-modelexplainabilityjobdefinition-s3output-s3uploadmode): String
+  [S3Uri](#cfn-sagemaker-modelexplainabilityjobdefinition-s3output-s3uri): String
+
+Properties
+LocalPath 
+The local path to the Amazon S3 storage location where Amazon SageMaker saves the results of a monitoring job. LocalPath is an absolute path for the output data. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+S3UploadMode 
+Whether to upload the results of the monitoring job continuously or after the job completes. 
+Required: No 
+Type: String 
+Update requires: Replacement
+S3Uri 
+A URI that identifies the Amazon S3 storage location where Amazon SageMaker saves the results of a monitoring job. 
+Required: Yes 
+Type: String 
+Update requires: Replacement

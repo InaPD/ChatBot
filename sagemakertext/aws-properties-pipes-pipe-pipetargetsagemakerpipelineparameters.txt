@@ -1,0 +1,21 @@
+AWS::Pipes::Pipe PipeTargetSageMakerPipelineParameters
+The parameters for using a SageMaker pipeline as a target.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[PipelineParameterList](#cfn-pipes-pipe-pipetargetsagemakerpipelineparameters-pipelineparameterlist)" : [ SageMakerPipelineParameter, ... ]
+}
+
+YAML
+
+  [PipelineParameterList](#cfn-pipes-pipe-pipetargetsagemakerpipelineparameters-pipelineparameterlist): 
+    - SageMakerPipelineParameter
+
+Properties
+PipelineParameterList 
+List of Parameter names and values for SageMaker Model Building Pipeline execution. 
+Required: No 
+Type: List of SageMakerPipelineParameter 
+Update requires: No interruption

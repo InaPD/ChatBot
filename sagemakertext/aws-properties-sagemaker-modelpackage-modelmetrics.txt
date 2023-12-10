@@ -1,0 +1,45 @@
+AWS::SageMaker::ModelPackage ModelMetrics
+Contains metrics captured from a model.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Bias](#cfn-sagemaker-modelpackage-modelmetrics-bias)" : Bias,
+  "[Explainability](#cfn-sagemaker-modelpackage-modelmetrics-explainability)" : Explainability,
+  "[ModelDataQuality](#cfn-sagemaker-modelpackage-modelmetrics-modeldataquality)" : ModelDataQuality,
+  "[ModelQuality](#cfn-sagemaker-modelpackage-modelmetrics-modelquality)" : ModelQuality
+}
+
+YAML
+
+  [Bias](#cfn-sagemaker-modelpackage-modelmetrics-bias): 
+    Bias
+  [Explainability](#cfn-sagemaker-modelpackage-modelmetrics-explainability): 
+    Explainability
+  [ModelDataQuality](#cfn-sagemaker-modelpackage-modelmetrics-modeldataquality): 
+    ModelDataQuality
+  [ModelQuality](#cfn-sagemaker-modelpackage-modelmetrics-modelquality): 
+    ModelQuality
+
+Properties
+Bias 
+Metrics that measure bais in a model. 
+Required: No 
+Type: Bias 
+Update requires: Replacement
+Explainability 
+Metrics that help explain a model. 
+Required: No 
+Type: Explainability 
+Update requires: Replacement
+ModelDataQuality 
+Metrics that measure the quality of the input data for a model. 
+Required: No 
+Type: ModelDataQuality 
+Update requires: Replacement
+ModelQuality 
+Metrics that measure the quality of a model. 
+Required: No 
+Type: ModelQuality 
+Update requires: Replacement

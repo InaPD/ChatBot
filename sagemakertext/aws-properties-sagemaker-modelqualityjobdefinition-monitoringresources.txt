@@ -1,0 +1,21 @@
+AWS::SageMaker::ModelQualityJobDefinition MonitoringResources
+Identifies the resources to deploy for a monitoring job.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ClusterConfig](#cfn-sagemaker-modelqualityjobdefinition-monitoringresources-clusterconfig)" : ClusterConfig
+}
+
+YAML
+
+  [ClusterConfig](#cfn-sagemaker-modelqualityjobdefinition-monitoringresources-clusterconfig): 
+    ClusterConfig
+
+Properties
+ClusterConfig 
+The configuration for the cluster resources used to run the processing job. 
+Required: Yes 
+Type: ClusterConfig 
+Update requires: Replacement

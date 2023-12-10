@@ -1,0 +1,29 @@
+AWS::SageMaker::ModelPackage ModelDataQuality
+Data quality constraints and statistics for a model.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Constraints](#cfn-sagemaker-modelpackage-modeldataquality-constraints)" : MetricsSource,
+  "[Statistics](#cfn-sagemaker-modelpackage-modeldataquality-statistics)" : MetricsSource
+}
+
+YAML
+
+  [Constraints](#cfn-sagemaker-modelpackage-modeldataquality-constraints): 
+    MetricsSource
+  [Statistics](#cfn-sagemaker-modelpackage-modeldataquality-statistics): 
+    MetricsSource
+
+Properties
+Constraints 
+Data quality constraints for a model. 
+Required: No 
+Type: MetricsSource 
+Update requires: Replacement
+Statistics 
+Data quality statistics for a model. 
+Required: No 
+Type: MetricsSource 
+Update requires: Replacement

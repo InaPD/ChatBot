@@ -1,0 +1,23 @@
+AWS::SageMaker::Model RepositoryAuthConfig
+Specifies an authentication configuration for the private docker registry where your model image is hosted. Specify a value for this property only if you specified Vpc as the value for the RepositoryAccessMode field of the ImageConfig object that you passed to a call to CreateModel and the private Docker registry where the model image is hosted requires authentication.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[RepositoryCredentialsProviderArn](#cfn-sagemaker-model-containerdefinition-imageconfig-repositoryauthconfig-repositorycredentialsproviderarn)" : String
+}
+
+YAML
+
+  [RepositoryCredentialsProviderArn](#cfn-sagemaker-model-containerdefinition-imageconfig-repositoryauthconfig-repositorycredentialsproviderarn): String
+
+Properties
+RepositoryCredentialsProviderArn 
+The Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the * AWS Lambda Developer Guide. 
+*Required: Yes 
+Type: String 
+Minimum: 1 
+Maximum: 2048 
+Pattern: .* 
+Update requires: Replacement

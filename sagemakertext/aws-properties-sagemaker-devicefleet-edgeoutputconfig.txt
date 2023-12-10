@@ -1,0 +1,31 @@
+AWS::SageMaker::DeviceFleet EdgeOutputConfig
+The output configuration for storing sample data collected by the fleet.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[KmsKeyId](#cfn-sagemaker-devicefleet-edgeoutputconfig-kmskeyid)" : String,
+  "[S3OutputLocation](#cfn-sagemaker-devicefleet-edgeoutputconfig-s3outputlocation)" : String
+}
+
+YAML
+
+  [KmsKeyId](#cfn-sagemaker-devicefleet-edgeoutputconfig-kmskeyid): String
+  [S3OutputLocation](#cfn-sagemaker-devicefleet-edgeoutputconfig-s3outputlocation): String
+
+Properties
+KmsKeyId 
+The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt data on the storage volume after compilation job. If you don't provide a KMS key ID, Amazon SageMaker uses the default KMS key for Amazon S3 for your role's account. 
+Required: No 
+Type: String 
+Maximum: 2048 
+Pattern: .* 
+Update requires: No interruption
+S3OutputLocation 
+The Amazon Simple Storage (S3) bucket URI. 
+Required: Yes 
+Type: String 
+Maximum: 1024 
+Pattern: ^(https|s3)://([^/]+)/?(.*)$ 
+Update requires: No interruption

@@ -1,0 +1,29 @@
+AWS::SageMaker::Space SpaceSettings
+A collection of space settings.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[JupyterServerAppSettings](#cfn-sagemaker-space-spacesettings-jupyterserverappsettings)" : JupyterServerAppSettings,
+  "[KernelGatewayAppSettings](#cfn-sagemaker-space-spacesettings-kernelgatewayappsettings)" : KernelGatewayAppSettings
+}
+
+YAML
+
+  [JupyterServerAppSettings](#cfn-sagemaker-space-spacesettings-jupyterserverappsettings): 
+    JupyterServerAppSettings
+  [KernelGatewayAppSettings](#cfn-sagemaker-space-spacesettings-kernelgatewayappsettings): 
+    KernelGatewayAppSettings
+
+Properties
+JupyterServerAppSettings 
+The JupyterServer app settings. 
+Required: No 
+Type: JupyterServerAppSettings 
+Update requires: No interruption
+KernelGatewayAppSettings 
+The KernelGateway app settings. 
+Required: No 
+Type: KernelGatewayAppSettings 
+Update requires: No interruption

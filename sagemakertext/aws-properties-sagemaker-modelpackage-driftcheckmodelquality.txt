@@ -1,0 +1,29 @@
+AWS::SageMaker::ModelPackage DriftCheckModelQuality
+Represents the drift check model quality baselines that can be used when the model monitor is set using the model package. 
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Constraints](#cfn-sagemaker-modelpackage-driftcheckmodelquality-constraints)" : MetricsSource,
+  "[Statistics](#cfn-sagemaker-modelpackage-driftcheckmodelquality-statistics)" : MetricsSource
+}
+
+YAML
+
+  [Constraints](#cfn-sagemaker-modelpackage-driftcheckmodelquality-constraints): 
+    MetricsSource
+  [Statistics](#cfn-sagemaker-modelpackage-driftcheckmodelquality-statistics): 
+    MetricsSource
+
+Properties
+Constraints 
+The drift check model quality constraints. 
+Required: No 
+Type: MetricsSource 
+Update requires: Replacement
+Statistics 
+The drift check model quality statistics. 
+Required: No 
+Type: MetricsSource 
+Update requires: Replacement

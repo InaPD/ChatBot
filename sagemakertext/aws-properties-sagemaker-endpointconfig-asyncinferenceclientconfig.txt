@@ -1,0 +1,20 @@
+AWS::SageMaker::EndpointConfig AsyncInferenceClientConfig
+Configures the behavior of the client used by SageMaker to interact with the model container during asynchronous inference.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[MaxConcurrentInvocationsPerInstance](#cfn-sagemaker-endpointconfig-asyncinferenceclientconfig-maxconcurrentinvocationsperinstance)" : Integer
+}
+
+YAML
+
+  [MaxConcurrentInvocationsPerInstance](#cfn-sagemaker-endpointconfig-asyncinferenceclientconfig-maxconcurrentinvocationsperinstance): Integer
+
+Properties
+MaxConcurrentInvocationsPerInstance 
+The maximum number of concurrent requests sent by the SageMaker client to the model container. If no value is provided, SageMaker will choose an optimal value for you. 
+Required: No 
+Type: Integer 
+Update requires: Replacement

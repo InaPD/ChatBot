@@ -1,0 +1,31 @@
+AWS::SageMaker::Endpoint CapacitySize
+Specifies the endpoint capacity to activate for production.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Type](#cfn-sagemaker-endpoint-capacitysize-type)" : String,
+  "[Value](#cfn-sagemaker-endpoint-capacitysize-value)" : Integer
+}
+
+YAML
+
+  [Type](#cfn-sagemaker-endpoint-capacitysize-type): String
+  [Value](#cfn-sagemaker-endpoint-capacitysize-value): Integer
+
+Properties
+Type 
+Specifies the endpoint capacity type. 
++  INSTANCE_COUNT: The endpoint activates based on the number of instances.
++  CAPACITY_PERCENT: The endpoint activates based on the specified percentage of capacity.
+Required: Yes 
+Type: String 
+Allowed values: CAPACITY_PERCENT | INSTANCE_COUNT 
+Update requires: No interruption
+Value 
+Defines the capacity size, either as a number of instances or a capacity percentage. 
+Required: Yes 
+Type: Integer 
+Minimum: 1 
+Update requires: No interruption

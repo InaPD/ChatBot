@@ -1,0 +1,70 @@
+AWS::SageMaker::ModelExplainabilityJobDefinition BatchTransformInput
+The BatchTransformInput property type specifies Property description not available. for an AWS::SageMaker::ModelExplainabilityJobDefinition.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[DataCapturedDestinationS3Uri](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datacaptureddestinations3uri)" : String,
+  "[DatasetFormat](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datasetformat)" : DatasetFormat,
+  "[FeaturesAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-featuresattribute)" : String,
+  "[InferenceAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-inferenceattribute)" : String,
+  "[LocalPath](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-localpath)" : String,
+  "[ProbabilityAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-probabilityattribute)" : String,
+  "[S3DataDistributionType](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3datadistributiontype)" : String,
+  "[S3InputMode](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3inputmode)" : String
+}
+
+YAML
+
+  [DataCapturedDestinationS3Uri](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datacaptureddestinations3uri): String
+  [DatasetFormat](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datasetformat): 
+    DatasetFormat
+  [FeaturesAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-featuresattribute): String
+  [InferenceAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-inferenceattribute): String
+  [LocalPath](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-localpath): String
+  [ProbabilityAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-probabilityattribute): String
+  [S3DataDistributionType](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3datadistributiontype): String
+  [S3InputMode](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3inputmode): String
+
+Properties
+DataCapturedDestinationS3Uri 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+DatasetFormat 
+Property description not available. 
+Required: Yes 
+Type: DatasetFormat 
+Update requires: Replacement
+FeaturesAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+InferenceAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+LocalPath 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+ProbabilityAttribute 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+S3DataDistributionType 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+S3InputMode 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement

@@ -1,0 +1,37 @@
+AWS::SageMaker::ModelQualityJobDefinition ModelQualityJobInput
+The input for the model quality monitoring job. Currently endponts are supported for input for model quality monitoring jobs.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[BatchTransformInput](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-batchtransforminput)" : BatchTransformInput,
+  "[EndpointInput](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-endpointinput)" : EndpointInput,
+  "[GroundTruthS3Input](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-groundtruths3input)" : MonitoringGroundTruthS3Input
+}
+
+YAML
+
+  [BatchTransformInput](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-batchtransforminput): 
+    BatchTransformInput
+  [EndpointInput](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-endpointinput): 
+    EndpointInput
+  [GroundTruthS3Input](#cfn-sagemaker-modelqualityjobdefinition-modelqualityjobinput-groundtruths3input): 
+    MonitoringGroundTruthS3Input
+
+Properties
+BatchTransformInput 
+Property description not available. 
+Required: No 
+Type: BatchTransformInput 
+Update requires: Replacement
+EndpointInput 
+Input object for the endpoint 
+Required: No 
+Type: EndpointInput 
+Update requires: Replacement
+GroundTruthS3Input 
+The ground truth label provided for the model. 
+Required: Yes 
+Type: MonitoringGroundTruthS3Input 
+Update requires: Replacement

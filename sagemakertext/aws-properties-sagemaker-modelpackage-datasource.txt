@@ -1,0 +1,21 @@
+AWS::SageMaker::ModelPackage DataSource
+Describes the location of the channel data.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[S3DataSource](#cfn-sagemaker-modelpackage-datasource-s3datasource)" : S3DataSource
+}
+
+YAML
+
+  [S3DataSource](#cfn-sagemaker-modelpackage-datasource-s3datasource): 
+    S3DataSource
+
+Properties
+S3DataSource 
+The S3 location of the data source that is associated with a channel. 
+Required: Yes 
+Type: S3DataSource 
+Update requires: Replacement

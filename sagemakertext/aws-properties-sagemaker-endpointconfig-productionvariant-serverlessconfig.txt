@@ -1,0 +1,31 @@
+AWS::SageMaker::EndpointConfig ServerlessConfig
+Specifies the serverless configuration for an endpoint variant.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[MaxConcurrency](#cfn-sagemaker-endpointconfig-productionvariant-serverlessconfig-maxconcurrency)" : Integer,
+  "[MemorySizeInMB](#cfn-sagemaker-endpointconfig-productionvariant-serverlessconfig-memorysizeinmb)" : Integer
+}
+
+YAML
+
+  [MaxConcurrency](#cfn-sagemaker-endpointconfig-productionvariant-serverlessconfig-maxconcurrency): Integer
+  [MemorySizeInMB](#cfn-sagemaker-endpointconfig-productionvariant-serverlessconfig-memorysizeinmb): Integer
+
+Properties
+MaxConcurrency 
+The maximum number of concurrent invocations your serverless endpoint can process. 
+Required: Yes 
+Type: Integer 
+Minimum: 1 
+Maximum: 200 
+Update requires: Replacement
+MemorySizeInMB 
+The memory size of your serverless endpoint. Valid values are in 1 GB increments: 1024 MB, 2048 MB, 3072 MB, 4096 MB, 5120 MB, or 6144 MB. 
+Required: Yes 
+Type: Integer 
+Minimum: 1024 
+Maximum: 6144 
+Update requires: Replacement

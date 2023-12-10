@@ -1,0 +1,27 @@
+AWS::SageMaker::EndpointConfig ClarifyTextConfig
+The ClarifyTextConfig property type specifies Property description not available. for an AWS::SageMaker::EndpointConfig.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Granularity](#cfn-sagemaker-endpointconfig-clarifytextconfig-granularity)" : String,
+  "[Language](#cfn-sagemaker-endpointconfig-clarifytextconfig-language)" : String
+}
+
+YAML
+
+  [Granularity](#cfn-sagemaker-endpointconfig-clarifytextconfig-granularity): String
+  [Language](#cfn-sagemaker-endpointconfig-clarifytextconfig-language): String
+
+Properties
+Granularity 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement
+Language 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: Replacement

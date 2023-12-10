@@ -1,0 +1,36 @@
+AWS::SageMaker::ModelCard TrainingDetails
+The training details of the model
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ObjectiveFunction](#cfn-sagemaker-modelcard-trainingdetails-objectivefunction)" : ObjectiveFunction,
+  "[TrainingJobDetails](#cfn-sagemaker-modelcard-trainingdetails-trainingjobdetails)" : TrainingJobDetails,
+  "[TrainingObservations](#cfn-sagemaker-modelcard-trainingdetails-trainingobservations)" : String
+}
+
+YAML
+
+  [ObjectiveFunction](#cfn-sagemaker-modelcard-trainingdetails-objectivefunction): 
+    ObjectiveFunction
+  [TrainingJobDetails](#cfn-sagemaker-modelcard-trainingdetails-trainingjobdetails): 
+    TrainingJobDetails
+  [TrainingObservations](#cfn-sagemaker-modelcard-trainingdetails-trainingobservations): String
+
+Properties
+ObjectiveFunction 
+The function that is optimized during model training. 
+Required: No 
+Type: ObjectiveFunction 
+Update requires: No interruption
+TrainingJobDetails 
+Details about any associated training jobs. 
+Required: No 
+Type: TrainingJobDetails 
+Update requires: No interruption
+TrainingObservations 
+Any observations about training. 
+Required: No 
+Type: String 
+Update requires: No interruption

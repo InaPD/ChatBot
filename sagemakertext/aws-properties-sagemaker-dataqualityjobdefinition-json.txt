@@ -1,0 +1,20 @@
+AWS::SageMaker::DataQualityJobDefinition Json
+The Json property type specifies Property description not available. for an AWS::SageMaker::DataQualityJobDefinition.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Line](#cfn-sagemaker-dataqualityjobdefinition-json-line)" : Boolean
+}
+
+YAML
+
+  [Line](#cfn-sagemaker-dataqualityjobdefinition-json-line): Boolean
+
+Properties
+Line 
+Property description not available. 
+Required: No 
+Type: Boolean 
+Update requires: Replacement

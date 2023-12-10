@@ -1,0 +1,29 @@
+AWS::SageMaker::ModelPackage ModelPackageStatusDetails
+Specifies the validation and image scan statuses of the model package.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ImageScanStatuses](#cfn-sagemaker-modelpackage-modelpackagestatusdetails-imagescanstatuses)" : [ ModelPackageStatusItem, ... ],
+  "[ValidationStatuses](#cfn-sagemaker-modelpackage-modelpackagestatusdetails-validationstatuses)" : [ ModelPackageStatusItem, ... ]
+}
+
+YAML
+
+  [ImageScanStatuses](#cfn-sagemaker-modelpackage-modelpackagestatusdetails-imagescanstatuses): 
+    - ModelPackageStatusItem
+  [ValidationStatuses](#cfn-sagemaker-modelpackage-modelpackagestatusdetails-validationstatuses): 
+    - ModelPackageStatusItem
+
+Properties
+ImageScanStatuses 
+The status of the scan of the Docker image container for the model package. 
+Required: No 
+Type: List of ModelPackageStatusItem 
+Update requires: No interruption
+ValidationStatuses 
+The validation status of the model package. 
+Required: Yes 
+Type: List of ModelPackageStatusItem 
+Update requires: No interruption

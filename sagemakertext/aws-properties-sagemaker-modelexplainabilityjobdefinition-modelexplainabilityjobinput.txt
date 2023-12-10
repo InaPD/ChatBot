@@ -1,0 +1,29 @@
+AWS::SageMaker::ModelExplainabilityJobDefinition ModelExplainabilityJobInput
+Inputs for the model explainability job.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[BatchTransformInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-batchtransforminput)" : BatchTransformInput,
+  "[EndpointInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-endpointinput)" : EndpointInput
+}
+
+YAML
+
+  [BatchTransformInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-batchtransforminput): 
+    BatchTransformInput
+  [EndpointInput](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityjobinput-endpointinput): 
+    EndpointInput
+
+Properties
+BatchTransformInput 
+Property description not available. 
+Required: No 
+Type: BatchTransformInput 
+Update requires: Replacement
+EndpointInput 
+Property description not available. 
+Required: No 
+Type: EndpointInput 
+Update requires: Replacement

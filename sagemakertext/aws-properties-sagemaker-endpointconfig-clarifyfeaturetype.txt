@@ -1,0 +1,2 @@
+AWS::SageMaker::EndpointConfig ClarifyFeatureType
+The ClarifyFeatureType property type specifies Property description not available. for an AWS::SageMaker::EndpointConfig.

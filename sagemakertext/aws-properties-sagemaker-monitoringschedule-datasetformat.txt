@@ -1,0 +1,36 @@
+AWS::SageMaker::MonitoringSchedule DatasetFormat
+The DatasetFormat property type specifies Property description not available. for an AWS::SageMaker::MonitoringSchedule.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Csv](#cfn-sagemaker-monitoringschedule-datasetformat-csv)" : Csv,
+  "[Json](#cfn-sagemaker-monitoringschedule-datasetformat-json)" : Json,
+  "[Parquet](#cfn-sagemaker-monitoringschedule-datasetformat-parquet)" : Boolean
+}
+
+YAML
+
+  [Csv](#cfn-sagemaker-monitoringschedule-datasetformat-csv): 
+    Csv
+  [Json](#cfn-sagemaker-monitoringschedule-datasetformat-json): 
+    Json
+  [Parquet](#cfn-sagemaker-monitoringschedule-datasetformat-parquet): Boolean
+
+Properties
+Csv 
+Property description not available. 
+Required: No 
+Type: Csv 
+Update requires: No interruption
+Json 
+Property description not available. 
+Required: No 
+Type: Json 
+Update requires: No interruption
+Parquet 
+Property description not available. 
+Required: No 
+Type: Boolean 
+Update requires: No interruption

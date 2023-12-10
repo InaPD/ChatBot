@@ -1,0 +1,41 @@
+AWS::SageMaker::Pipeline S3Location
+The S3Location property type specifies Property description not available. for an AWS::SageMaker::Pipeline.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Bucket](#cfn-sagemaker-pipeline-s3location-bucket)" : String,
+  "[ETag](#cfn-sagemaker-pipeline-s3location-etag)" : String,
+  "[Key](#cfn-sagemaker-pipeline-s3location-key)" : String,
+  "[Version](#cfn-sagemaker-pipeline-s3location-version)" : String
+}
+
+YAML
+
+  [Bucket](#cfn-sagemaker-pipeline-s3location-bucket): String
+  [ETag](#cfn-sagemaker-pipeline-s3location-etag): String
+  [Key](#cfn-sagemaker-pipeline-s3location-key): String
+  [Version](#cfn-sagemaker-pipeline-s3location-version): String
+
+Properties
+Bucket 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: No interruption
+ETag 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: No interruption
+Key 
+Property description not available. 
+Required: Yes 
+Type: String 
+Update requires: No interruption
+Version 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: No interruption

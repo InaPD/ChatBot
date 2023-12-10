@@ -1,0 +1,27 @@
+AWS::SageMaker::EndpointConfig AsyncInferenceNotificationConfig
+Specifies the configuration for notifications of inference results for asynchronous inference.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ErrorTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-errortopic)" : String,
+  "[SuccessTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-successtopic)" : String
+}
+
+YAML
+
+  [ErrorTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-errortopic): String
+  [SuccessTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-successtopic): String
+
+Properties
+ErrorTopic 
+Amazon SNS topic to post a notification to when an inference fails. If no topic is provided, no notification is sent on failure. 
+Required: No 
+Type: String 
+Update requires: Replacement
+SuccessTopic 
+Amazon SNS topic to post a notification to when an inference completes successfully. If no topic is provided, no notification is sent on success. 
+Required: No 
+Type: String 
+Update requires: Replacement

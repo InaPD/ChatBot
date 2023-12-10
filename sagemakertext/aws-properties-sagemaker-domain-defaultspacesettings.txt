@@ -1,0 +1,48 @@
+AWS::SageMaker::Domain DefaultSpaceSettings
+A collection of settings that apply to spaces created in the Domain.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ExecutionRole](#cfn-sagemaker-domain-defaultspacesettings-executionrole)" : String,
+  "[JupyterServerAppSettings](#cfn-sagemaker-domain-defaultspacesettings-jupyterserverappsettings)" : JupyterServerAppSettings,
+  "[KernelGatewayAppSettings](#cfn-sagemaker-domain-defaultspacesettings-kernelgatewayappsettings)" : KernelGatewayAppSettings,
+  "[SecurityGroups](#cfn-sagemaker-domain-defaultspacesettings-securitygroups)" : [ String, ... ]
+}
+
+YAML
+
+  [ExecutionRole](#cfn-sagemaker-domain-defaultspacesettings-executionrole): String
+  [JupyterServerAppSettings](#cfn-sagemaker-domain-defaultspacesettings-jupyterserverappsettings): 
+    JupyterServerAppSettings
+  [KernelGatewayAppSettings](#cfn-sagemaker-domain-defaultspacesettings-kernelgatewayappsettings): 
+    KernelGatewayAppSettings
+  [SecurityGroups](#cfn-sagemaker-domain-defaultspacesettings-securitygroups): 
+    - String
+
+Properties
+ExecutionRole 
+The execution role for the space. 
+Required: No 
+Type: String 
+Minimum: 20 
+Maximum: 2048 
+Pattern: ^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$ 
+Update requires: No interruption
+JupyterServerAppSettings 
+The JupyterServer app settings. 
+Required: No 
+Type: JupyterServerAppSettings 
+Update requires: No interruption
+KernelGatewayAppSettings 
+The KernelGateway app settings. 
+Required: No 
+Type: KernelGatewayAppSettings 
+Update requires: No interruption
+SecurityGroups 
+The security groups for the Amazon Virtual Private Cloud that the space uses for communication. 
+Required: No 
+Type: List of String 
+Maximum: 5 
+Update requires: No interruption

@@ -1,0 +1,36 @@
+AWS::SageMaker::EndpointConfig ClarifyExplainerConfig
+The ClarifyExplainerConfig property type specifies Property description not available. for an AWS::SageMaker::EndpointConfig.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[EnableExplanations](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-enableexplanations)" : String,
+  "[InferenceConfig](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-inferenceconfig)" : ClarifyInferenceConfig,
+  "[ShapConfig](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-shapconfig)" : ClarifyShapConfig
+}
+
+YAML
+
+  [EnableExplanations](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-enableexplanations): String
+  [InferenceConfig](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-inferenceconfig): 
+    ClarifyInferenceConfig
+  [ShapConfig](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-shapconfig): 
+    ClarifyShapConfig
+
+Properties
+EnableExplanations 
+Property description not available. 
+Required: No 
+Type: String 
+Update requires: Replacement
+InferenceConfig 
+Property description not available. 
+Required: No 
+Type: ClarifyInferenceConfig 
+Update requires: Replacement
+ShapConfig 
+Property description not available. 
+Required: Yes 
+Type: ClarifyShapConfig 
+Update requires: Replacement

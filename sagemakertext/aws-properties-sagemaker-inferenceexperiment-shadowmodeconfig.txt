@@ -1,0 +1,31 @@
+AWS::SageMaker::InferenceExperiment ShadowModeConfig
+The configuration of ShadowMode inference experiment type, which specifies a production variant to take all the inference requests, and a shadow variant to which Amazon SageMaker replicates a percentage of the inference requests. For the shadow variant it also specifies the percentage of requests that Amazon SageMaker replicates. 
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ShadowModelVariants](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig-shadowmodelvariants)" : [ ShadowModelVariantConfig, ... ],
+  "[SourceModelVariantName](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig-sourcemodelvariantname)" : String
+}
+
+YAML
+
+  [ShadowModelVariants](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig-shadowmodelvariants): 
+    - ShadowModelVariantConfig
+  [SourceModelVariantName](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig-sourcemodelvariantname): String
+
+Properties
+ShadowModelVariants 
+List of shadow variant configurations. 
+Required: Yes 
+Type: List of ShadowModelVariantConfig 
+Maximum: 1 
+Update requires: No interruption
+SourceModelVariantName 
+ The name of the production variant, which takes all the inference requests. 
+Required: Yes 
+Type: String 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])? 
+Update requires: No interruption

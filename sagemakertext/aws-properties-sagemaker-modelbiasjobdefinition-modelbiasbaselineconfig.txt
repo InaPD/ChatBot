@@ -1,0 +1,31 @@
+AWS::SageMaker::ModelBiasJobDefinition ModelBiasBaselineConfig
+The configuration for a baseline model bias job.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[BaseliningJobName](#cfn-sagemaker-modelbiasjobdefinition-modelbiasbaselineconfig-baseliningjobname)" : String,
+  "[ConstraintsResource](#cfn-sagemaker-modelbiasjobdefinition-modelbiasbaselineconfig-constraintsresource)" : ConstraintsResource
+}
+
+YAML
+
+  [BaseliningJobName](#cfn-sagemaker-modelbiasjobdefinition-modelbiasbaselineconfig-baseliningjobname): String
+  [ConstraintsResource](#cfn-sagemaker-modelbiasjobdefinition-modelbiasbaselineconfig-constraintsresource): 
+    ConstraintsResource
+
+Properties
+BaseliningJobName 
+The name of the baseline model bias job. 
+Required: No 
+Type: String 
+Minimum: 1 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62} 
+Update requires: Replacement
+ConstraintsResource 
+The constraints resource for a monitoring job. 
+Required: No 
+Type: ConstraintsResource 
+Update requires: Replacement

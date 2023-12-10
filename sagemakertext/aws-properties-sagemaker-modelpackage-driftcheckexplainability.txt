@@ -1,0 +1,29 @@
+AWS::SageMaker::ModelPackage DriftCheckExplainability
+Represents the drift check explainability baselines that can be used when the model monitor is set using the model package. 
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ConfigFile](#cfn-sagemaker-modelpackage-driftcheckexplainability-configfile)" : FileSource,
+  "[Constraints](#cfn-sagemaker-modelpackage-driftcheckexplainability-constraints)" : MetricsSource
+}
+
+YAML
+
+  [ConfigFile](#cfn-sagemaker-modelpackage-driftcheckexplainability-configfile): 
+    FileSource
+  [Constraints](#cfn-sagemaker-modelpackage-driftcheckexplainability-constraints): 
+    MetricsSource
+
+Properties
+ConfigFile 
+The explainability config file for the model. 
+Required: No 
+Type: FileSource 
+Update requires: Replacement
+Constraints 
+The drift check explainability constraints. 
+Required: No 
+Type: MetricsSource 
+Update requires: Replacement

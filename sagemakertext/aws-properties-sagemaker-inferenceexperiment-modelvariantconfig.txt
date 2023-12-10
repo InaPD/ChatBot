@@ -1,0 +1,39 @@
+AWS::SageMaker::InferenceExperiment ModelVariantConfig
+Contains information about the deployment options of a model.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[InfrastructureConfig](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-infrastructureconfig)" : ModelInfrastructureConfig,
+  "[ModelName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-modelname)" : String,
+  "[VariantName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-variantname)" : String
+}
+
+YAML
+
+  [InfrastructureConfig](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-infrastructureconfig): 
+    ModelInfrastructureConfig
+  [ModelName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-modelname): String
+  [VariantName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-variantname): String
+
+Properties
+InfrastructureConfig 
+The configuration for the infrastructure that the model will be deployed to. 
+Required: Yes 
+Type: ModelInfrastructureConfig 
+Update requires: No interruption
+ModelName 
+The name of the Amazon SageMaker Model entity. 
+Required: Yes 
+Type: String 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9](-*[a-zA-Z0-9])* 
+Update requires: No interruption
+VariantName 
+The name of the variant. 
+Required: Yes 
+Type: String 
+Maximum: 63 
+Pattern: ^[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])? 
+Update requires: No interruption

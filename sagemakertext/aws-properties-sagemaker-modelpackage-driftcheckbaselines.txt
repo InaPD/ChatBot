@@ -1,0 +1,45 @@
+AWS::SageMaker::ModelPackage DriftCheckBaselines
+Represents the drift check baselines that can be used when the model monitor is set using the model package. 
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Bias](#cfn-sagemaker-modelpackage-driftcheckbaselines-bias)" : DriftCheckBias,
+  "[Explainability](#cfn-sagemaker-modelpackage-driftcheckbaselines-explainability)" : DriftCheckExplainability,
+  "[ModelDataQuality](#cfn-sagemaker-modelpackage-driftcheckbaselines-modeldataquality)" : DriftCheckModelDataQuality,
+  "[ModelQuality](#cfn-sagemaker-modelpackage-driftcheckbaselines-modelquality)" : DriftCheckModelQuality
+}
+
+YAML
+
+  [Bias](#cfn-sagemaker-modelpackage-driftcheckbaselines-bias): 
+    DriftCheckBias
+  [Explainability](#cfn-sagemaker-modelpackage-driftcheckbaselines-explainability): 
+    DriftCheckExplainability
+  [ModelDataQuality](#cfn-sagemaker-modelpackage-driftcheckbaselines-modeldataquality): 
+    DriftCheckModelDataQuality
+  [ModelQuality](#cfn-sagemaker-modelpackage-driftcheckbaselines-modelquality): 
+    DriftCheckModelQuality
+
+Properties
+Bias 
+Represents the drift check bias baselines that can be used when the model monitor is set using the model package. 
+Required: No 
+Type: DriftCheckBias 
+Update requires: Replacement
+Explainability 
+Represents the drift check explainability baselines that can be used when the model monitor is set using the model package. 
+Required: No 
+Type: DriftCheckExplainability 
+Update requires: Replacement
+ModelDataQuality 
+Represents the drift check model data quality baselines that can be used when the model monitor is set using the model package. 
+Required: No 
+Type: DriftCheckModelDataQuality 
+Update requires: Replacement
+ModelQuality 
+Represents the drift check model quality baselines that can be used when the model monitor is set using the model package. 
+Required: No 
+Type: DriftCheckModelQuality 
+Update requires: Replacement

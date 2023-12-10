@@ -1,0 +1,45 @@
+AWS::SageMaker::Domain RStudioServerProDomainSettings
+A collection of settings that configure the RStudioServerPro Domain-level app.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[DefaultResourceSpec](#cfn-sagemaker-domain-rstudioserverprodomainsettings-defaultresourcespec)" : ResourceSpec,
+  "[DomainExecutionRoleArn](#cfn-sagemaker-domain-rstudioserverprodomainsettings-domainexecutionrolearn)" : String,
+  "[RStudioConnectUrl](#cfn-sagemaker-domain-rstudioserverprodomainsettings-rstudioconnecturl)" : String,
+  "[RStudioPackageManagerUrl](#cfn-sagemaker-domain-rstudioserverprodomainsettings-rstudiopackagemanagerurl)" : String
+}
+
+YAML
+
+  [DefaultResourceSpec](#cfn-sagemaker-domain-rstudioserverprodomainsettings-defaultresourcespec): 
+    ResourceSpec
+  [DomainExecutionRoleArn](#cfn-sagemaker-domain-rstudioserverprodomainsettings-domainexecutionrolearn): String
+  [RStudioConnectUrl](#cfn-sagemaker-domain-rstudioserverprodomainsettings-rstudioconnecturl): String
+  [RStudioPackageManagerUrl](#cfn-sagemaker-domain-rstudioserverprodomainsettings-rstudiopackagemanagerurl): String
+
+Properties
+DefaultResourceSpec 
+A collection that defines the default InstanceType, SageMakerImageArn, and SageMakerImageVersionArn for the Domain. 
+Required: No 
+Type: ResourceSpec 
+Update requires: Replacement
+DomainExecutionRoleArn 
+The ARN of the execution role for the RStudioServerPro Domain-level app. 
+Required: Yes 
+Type: String 
+Minimum: 20 
+Maximum: 2048 
+Pattern: ^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$ 
+Update requires: No interruption
+RStudioConnectUrl 
+A URL pointing to an RStudio Connect server. 
+Required: No 
+Type: String 
+Update requires: No interruption
+RStudioPackageManagerUrl 
+A URL pointing to an RStudio Package Manager server. 
+Required: No 
+Type: String 
+Update requires: No interruption

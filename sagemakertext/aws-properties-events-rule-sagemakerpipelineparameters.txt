@@ -1,0 +1,22 @@
+AWS::Events::Rule SageMakerPipelineParameters
+These are custom parameters to use when the target is a SageMaker Model Building Pipeline that starts based on EventBridge events.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[PipelineParameterList](#cfn-events-rule-sagemakerpipelineparameters-pipelineparameterlist)" : [ SageMakerPipelineParameter, ... ]
+}
+
+YAML
+
+  [PipelineParameterList](#cfn-events-rule-sagemakerpipelineparameters-pipelineparameterlist): 
+    - SageMakerPipelineParameter
+
+Properties
+PipelineParameterList 
+List of Parameter names and values for SageMaker Model Building Pipeline execution. 
+Required: No 
+Type: List of SageMakerPipelineParameter 
+Maximum: 200 
+Update requires: No interruption

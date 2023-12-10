@@ -1,0 +1,5 @@
+Common Data Formats for Built-in Algorithms
+The following topics explain the data formats for the algorithms provided by Amazon SageMaker.
+Topics
++ Common Data Formats for Training
++ Common Data Formats for Inference

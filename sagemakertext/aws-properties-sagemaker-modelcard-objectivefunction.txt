@@ -1,0 +1,28 @@
+AWS::SageMaker::ModelCard ObjectiveFunction
+The function that is optimized during model training.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Function](#cfn-sagemaker-modelcard-objectivefunction-function)" : Function,
+  "[Notes](#cfn-sagemaker-modelcard-objectivefunction-notes)" : String
+}
+
+YAML
+
+  [Function](#cfn-sagemaker-modelcard-objectivefunction-function): 
+    Function
+  [Notes](#cfn-sagemaker-modelcard-objectivefunction-notes): String
+
+Properties
+Function 
+A function object that details optimization direction, metric, and additional descriptions. 
+Required: No 
+Type: Function 
+Update requires: No interruption
+Notes 
+Notes about the object function, including other considerations for possible objective functions. 
+Required: No 
+Type: String 
+Update requires: No interruption

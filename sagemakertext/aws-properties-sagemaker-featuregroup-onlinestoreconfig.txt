@@ -1,0 +1,29 @@
+AWS::SageMaker::FeatureGroup OnlineStoreConfig
+Use this to specify the AWS Key Management Service (KMS) Key ID, or KMSKeyId, for at rest data encryption. You can turn OnlineStore on or off by specifying the EnableOnlineStore flag at General Assembly; the default value is False.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[EnableOnlineStore](#cfn-sagemaker-featuregroup-onlinestoreconfig-enableonlinestore)" : Boolean,
+  "[SecurityConfig](#cfn-sagemaker-featuregroup-onlinestoreconfig-securityconfig)" : OnlineStoreSecurityConfig
+}
+
+YAML
+
+  [EnableOnlineStore](#cfn-sagemaker-featuregroup-onlinestoreconfig-enableonlinestore): Boolean
+  [SecurityConfig](#cfn-sagemaker-featuregroup-onlinestoreconfig-securityconfig): 
+    OnlineStoreSecurityConfig
+
+Properties
+EnableOnlineStore 
+Turn OnlineStore off by specifying False for the EnableOnlineStore flag. Turn OnlineStore on by specifying True for the EnableOnlineStore flag. 
+The default value is False. 
+Required: No 
+Type: Boolean 
+Update requires: Replacement
+SecurityConfig 
+Use to specify KMS Key ID (KMSKeyId) for at-rest encryption of your OnlineStore. 
+Required: No 
+Type: OnlineStoreSecurityConfig 
+Update requires: Replacement

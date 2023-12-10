@@ -1,0 +1,21 @@
+AWS::SageMaker::ModelCard TrainingEnvironment
+SageMaker training image.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ContainerImage](#cfn-sagemaker-modelcard-trainingenvironment-containerimage)" : [ String, ... ]
+}
+
+YAML
+
+  [ContainerImage](#cfn-sagemaker-modelcard-trainingenvironment-containerimage): 
+    - String
+
+Properties
+ContainerImage 
+SageMaker inference image URI. 
+Required: No 
+Type: List of String 
+Update requires: No interruption

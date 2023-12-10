@@ -1,0 +1,29 @@
+AWS::SageMaker::EndpointConfig AsyncInferenceConfig
+Specifies configuration for how an endpoint performs asynchronous inference.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ClientConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig-clientconfig)" : AsyncInferenceClientConfig,
+  "[OutputConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig-outputconfig)" : AsyncInferenceOutputConfig
+}
+
+YAML
+
+  [ClientConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig-clientconfig): 
+    AsyncInferenceClientConfig
+  [OutputConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig-outputconfig): 
+    AsyncInferenceOutputConfig
+
+Properties
+ClientConfig 
+Configures the behavior of the client used by SageMaker to interact with the model container during asynchronous inference. 
+Required: No 
+Type: AsyncInferenceClientConfig 
+Update requires: Replacement
+OutputConfig 
+Specifies the configuration for asynchronous inference invocation outputs. 
+Required: Yes 
+Type: AsyncInferenceOutputConfig 
+Update requires: Replacement

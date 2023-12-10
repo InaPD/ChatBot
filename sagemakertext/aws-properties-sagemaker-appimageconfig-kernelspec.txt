@@ -1,0 +1,29 @@
+AWS::SageMaker::AppImageConfig KernelSpec
+The specification of a Jupyter kernel.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[DisplayName](#cfn-sagemaker-appimageconfig-kernelspec-displayname)" : String,
+  "[Name](#cfn-sagemaker-appimageconfig-kernelspec-name)" : String
+}
+
+YAML
+
+  [DisplayName](#cfn-sagemaker-appimageconfig-kernelspec-displayname): String
+  [Name](#cfn-sagemaker-appimageconfig-kernelspec-name): String
+
+Properties
+DisplayName 
+The display name of the kernel. 
+Required: No 
+Type: String 
+Maximum: 1024 
+Update requires: No interruption
+Name 
+The name of the Jupyter kernel in the image. This value is case sensitive. 
+Required: Yes 
+Type: String 
+Maximum: 1024 
+Update requires: No interruption

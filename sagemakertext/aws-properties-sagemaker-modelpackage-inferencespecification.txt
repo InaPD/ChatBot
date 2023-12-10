@@ -1,0 +1,56 @@
+AWS::SageMaker::ModelPackage InferenceSpecification
+Defines how to perform inference generation after a training job is run.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Containers](#cfn-sagemaker-modelpackage-inferencespecification-containers)" : [ ModelPackageContainerDefinition, ... ],
+  "[SupportedContentTypes](#cfn-sagemaker-modelpackage-inferencespecification-supportedcontenttypes)" : [ String, ... ],
+  "[SupportedRealtimeInferenceInstanceTypes](#cfn-sagemaker-modelpackage-inferencespecification-supportedrealtimeinferenceinstancetypes)" : [ String, ... ],
+  "[SupportedResponseMIMETypes](#cfn-sagemaker-modelpackage-inferencespecification-supportedresponsemimetypes)" : [ String, ... ],
+  "[SupportedTransformInstanceTypes](#cfn-sagemaker-modelpackage-inferencespecification-supportedtransforminstancetypes)" : [ String, ... ]
+}
+
+YAML
+
+  [Containers](#cfn-sagemaker-modelpackage-inferencespecification-containers): 
+    - ModelPackageContainerDefinition
+  [SupportedContentTypes](#cfn-sagemaker-modelpackage-inferencespecification-supportedcontenttypes): 
+    - String
+  [SupportedRealtimeInferenceInstanceTypes](#cfn-sagemaker-modelpackage-inferencespecification-supportedrealtimeinferenceinstancetypes): 
+    - String
+  [SupportedResponseMIMETypes](#cfn-sagemaker-modelpackage-inferencespecification-supportedresponsemimetypes): 
+    - String
+  [SupportedTransformInstanceTypes](#cfn-sagemaker-modelpackage-inferencespecification-supportedtransforminstancetypes): 
+    - String
+
+Properties
+Containers 
+The Amazon ECR registry path of the Docker image that contains the inference code. 
+Required: Yes 
+Type: List of ModelPackageContainerDefinition 
+Maximum: 15 
+Update requires: Replacement
+SupportedContentTypes 
+The supported MIME types for the input data. 
+Required: Yes 
+Type: List of String 
+Update requires: Replacement
+SupportedRealtimeInferenceInstanceTypes 
+A list of the instance types that are used to generate inferences in real-time. 
+This parameter is required for unversioned models, and optional for versioned models. 
+Required: No 
+Type: List of String 
+Update requires: Replacement
+SupportedResponseMIMETypes 
+The supported MIME types for the output data. 
+Required: Yes 
+Type: List of String 
+Update requires: Replacement
+SupportedTransformInstanceTypes 
+A list of the instance types on which a transformation job can be run or on which an endpoint can be deployed. 
+This parameter is required for unversioned models, and optional for versioned models. 
+Required: No 
+Type: List of String 
+Update requires: Replacement

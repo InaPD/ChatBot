@@ -1,0 +1,76 @@
+AWS::SageMaker::Domain UserSettings
+A collection of settings that apply to users of Amazon SageMaker Studio. These settings are specified when the CreateUserProfile API is called, and as DefaultUserSettings when the CreateDomain API is called.
+SecurityGroups is aggregated when specified in both calls. For all other settings in UserSettings, the values specified in CreateUserProfile take precedence over those specified in CreateDomain.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[ExecutionRole](#cfn-sagemaker-domain-usersettings-executionrole)" : String,
+  "[JupyterServerAppSettings](#cfn-sagemaker-domain-usersettings-jupyterserverappsettings)" : JupyterServerAppSettings,
+  "[KernelGatewayAppSettings](#cfn-sagemaker-domain-usersettings-kernelgatewayappsettings)" : KernelGatewayAppSettings,
+  "[RSessionAppSettings](#cfn-sagemaker-domain-usersettings-rsessionappsettings)" : RSessionAppSettings,
+  "[RStudioServerProAppSettings](#cfn-sagemaker-domain-usersettings-rstudioserverproappsettings)" : RStudioServerProAppSettings,
+  "[SecurityGroups](#cfn-sagemaker-domain-usersettings-securitygroups)" : [ String, ... ],
+  "[SharingSettings](#cfn-sagemaker-domain-usersettings-sharingsettings)" : SharingSettings
+}
+
+YAML
+
+  [ExecutionRole](#cfn-sagemaker-domain-usersettings-executionrole): String
+  [JupyterServerAppSettings](#cfn-sagemaker-domain-usersettings-jupyterserverappsettings): 
+    JupyterServerAppSettings
+  [KernelGatewayAppSettings](#cfn-sagemaker-domain-usersettings-kernelgatewayappsettings): 
+    KernelGatewayAppSettings
+  [RSessionAppSettings](#cfn-sagemaker-domain-usersettings-rsessionappsettings): 
+    RSessionAppSettings
+  [RStudioServerProAppSettings](#cfn-sagemaker-domain-usersettings-rstudioserverproappsettings): 
+    RStudioServerProAppSettings
+  [SecurityGroups](#cfn-sagemaker-domain-usersettings-securitygroups): 
+    - String
+  [SharingSettings](#cfn-sagemaker-domain-usersettings-sharingsettings): 
+    SharingSettings
+
+Properties
+ExecutionRole 
+The execution role for the user. 
+Required: No 
+Type: String 
+Minimum: 20 
+Maximum: 2048 
+Pattern: ^arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+$ 
+Update requires: No interruption
+JupyterServerAppSettings 
+The Jupyter server's app settings. 
+Required: No 
+Type: JupyterServerAppSettings 
+Update requires: No interruption
+KernelGatewayAppSettings 
+The kernel gateway app settings. 
+Required: No 
+Type: KernelGatewayAppSettings 
+Update requires: No interruption
+RSessionAppSettings 
+A collection of settings that configure the RSessionGateway app. 
+Required: No 
+Type: RSessionAppSettings 
+Update requires: No interruption
+RStudioServerProAppSettings 
+A collection of settings that configure user interaction with the RStudioServerPro app. 
+Required: No 
+Type: RStudioServerProAppSettings 
+Update requires: No interruption
+SecurityGroups 
+The security groups for the Amazon Virtual Private Cloud (VPC) that Studio uses for communication. 
+Optional when the CreateDomain.AppNetworkAccessType parameter is set to PublicInternetOnly. 
+Required when the CreateDomain.AppNetworkAccessType parameter is set to VpcOnly. 
+Amazon SageMaker adds a security group to allow NFS traffic from SageMaker Studio. Therefore, the number of security groups that you can specify is one less than the maximum number shown. 
+Required: No 
+Type: List of String 
+Maximum: 5 
+Update requires: No interruption
+SharingSettings 
+Specifies options for sharing SageMaker Studio notebooks. 
+Required: No 
+Type: SharingSettings 
+Update requires: No interruption

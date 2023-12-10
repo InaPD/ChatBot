@@ -1,0 +1,22 @@
+AWS::SageMaker::Model InferenceExecutionConfig
+Specifies details about how containers in a multi-container endpoint are run.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[Mode](#cfn-sagemaker-model-inferenceexecutionconfig-mode)" : String
+}
+
+YAML
+
+  [Mode](#cfn-sagemaker-model-inferenceexecutionconfig-mode): String
+
+Properties
+Mode 
+How containers in a multi-container are run. The following values are valid. 
++ Serial - Containers run as a serial pipeline.
++ Direct - Only the individual container that you specify is run.
+Required: Yes 
+Type: String 
+Update requires: Replacement

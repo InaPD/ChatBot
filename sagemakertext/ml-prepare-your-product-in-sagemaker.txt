@@ -1,0 +1,7 @@
+Prepare your product in SageMaker
+Before publishing your product in AWS Marketplace, you must prepare it in Amazon SageMaker. There are three steps to preparing your product:
+
+Packaging your code into images – To prepare a model package or algorithm product, you must create the Docker container images for your product. 
+Uploading your images – After packaging your code in container images and testing them locally, upload the images and scan them for known vulnerabilities. Fix any vulnerabilities before continuing. 
+Creating your Amazon SageMaker resource – After your images are scanned successfully, they can be used to create a model package or algorithm resource in SageMaker. 
+

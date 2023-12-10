@@ -1,0 +1,30 @@
+AWS::SageMaker::AppImageConfig KernelGatewayImageConfig
+The configuration for the file system and kernels in a SageMaker image running as a KernelGateway app.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[FileSystemConfig](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-filesystemconfig)" : FileSystemConfig,
+  "[KernelSpecs](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-kernelspecs)" : [ KernelSpec, ... ]
+}
+
+YAML
+
+  [FileSystemConfig](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-filesystemconfig): 
+    FileSystemConfig
+  [KernelSpecs](#cfn-sagemaker-appimageconfig-kernelgatewayimageconfig-kernelspecs): 
+    - KernelSpec
+
+Properties
+FileSystemConfig 
+The Amazon Elastic File System (EFS) storage configuration for a SageMaker image. 
+Required: No 
+Type: FileSystemConfig 
+Update requires: No interruption
+KernelSpecs 
+The specification of the Jupyter kernels in the image. 
+Required: Yes 
+Type: List of KernelSpec 
+Maximum: 1 
+Update requires: No interruption

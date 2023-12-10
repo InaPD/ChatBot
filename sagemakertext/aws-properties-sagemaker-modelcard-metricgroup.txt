@@ -1,0 +1,33 @@
+AWS::SageMaker::ModelCard MetricGroup
+A group of metric data that you use to initialize a metric group object.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[MetricData](#cfn-sagemaker-modelcard-metricgroup-metricdata)" : [ MetricDataItems, ... ],
+  "[Name](#cfn-sagemaker-modelcard-metricgroup-name)" : String
+}
+
+YAML
+
+  [MetricData](#cfn-sagemaker-modelcard-metricgroup-metricdata): 
+    - MetricDataItems
+  [Name](#cfn-sagemaker-modelcard-metricgroup-name): String
+
+Properties
+MetricData 
+A list of metric objects. The MetricDataItems list can have one of the following values: 
++ bar_chart_metric
++ matrix_metric
++ simple_metric
++ linear_graph_metric
+For more information about the metric schema, see the definition section of the model card JSON schema. 
+Required: Yes 
+Type: List of MetricDataItems 
+Update requires: No interruption
+Name 
+The metric group name. 
+Required: Yes 
+Type: String 
+Update requires: No interruption

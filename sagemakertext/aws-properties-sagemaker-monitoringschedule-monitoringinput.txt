@@ -1,0 +1,29 @@
+AWS::SageMaker::MonitoringSchedule MonitoringInput
+The inputs for a monitoring job.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[BatchTransformInput](#cfn-sagemaker-monitoringschedule-monitoringinput-batchtransforminput)" : BatchTransformInput,
+  "[EndpointInput](#cfn-sagemaker-monitoringschedule-monitoringinput-endpointinput)" : EndpointInput
+}
+
+YAML
+
+  [BatchTransformInput](#cfn-sagemaker-monitoringschedule-monitoringinput-batchtransforminput): 
+    BatchTransformInput
+  [EndpointInput](#cfn-sagemaker-monitoringschedule-monitoringinput-endpointinput): 
+    EndpointInput
+
+Properties
+BatchTransformInput 
+Property description not available. 
+Required: No 
+Type: BatchTransformInput 
+Update requires: No interruption
+EndpointInput 
+The endpoint for a monitoring job. 
+Required: No 
+Type: EndpointInput 
+Update requires: No interruption

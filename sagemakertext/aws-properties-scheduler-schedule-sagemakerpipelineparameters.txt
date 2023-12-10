@@ -1,0 +1,21 @@
+AWS::Scheduler::Schedule SageMakerPipelineParameters
+The templated target type for the Amazon SageMaker https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartPipelineExecution.html API operation.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[PipelineParameterList](#cfn-scheduler-schedule-sagemakerpipelineparameters-pipelineparameterlist)" : [ SageMakerPipelineParameter, ... ]
+}
+
+YAML
+
+  [PipelineParameterList](#cfn-scheduler-schedule-sagemakerpipelineparameters-pipelineparameterlist): 
+    - SageMakerPipelineParameter
+
+Properties
+PipelineParameterList 
+List of parameter names and values to use when executing the SageMaker Model Building Pipeline. 
+Required: No 
+Type: List of SageMakerPipelineParameter 
+Update requires: No interruption

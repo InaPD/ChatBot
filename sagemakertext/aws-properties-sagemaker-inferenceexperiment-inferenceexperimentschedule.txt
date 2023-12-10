@@ -1,0 +1,28 @@
+AWS::SageMaker::InferenceExperiment InferenceExperimentSchedule
+The start and end times of an inference experiment.
+The maximum duration that you can set for an inference experiment is 30 days.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[EndTime](#cfn-sagemaker-inferenceexperiment-inferenceexperimentschedule-endtime)" : String,
+  "[StartTime](#cfn-sagemaker-inferenceexperiment-inferenceexperimentschedule-starttime)" : String
+}
+
+YAML
+
+  [EndTime](#cfn-sagemaker-inferenceexperiment-inferenceexperimentschedule-endtime): String
+  [StartTime](#cfn-sagemaker-inferenceexperiment-inferenceexperimentschedule-starttime): String
+
+Properties
+EndTime 
+The timestamp at which the inference experiment ended or will end. 
+Required: No 
+Type: String 
+Update requires: No interruption
+StartTime 
+The timestamp at which the inference experiment started or will start. 
+Required: No 
+Type: String 
+Update requires: No interruption

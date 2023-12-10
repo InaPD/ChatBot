@@ -1,0 +1,85 @@
+AWS::SageMaker::ModelCard ModelOverview
+An overview about the model.
+Syntax
+To declare this entity in your AWS CloudFormation template, use the following syntax:
+JSON
+
+{
+  "[AlgorithmType](#cfn-sagemaker-modelcard-modeloverview-algorithmtype)" : String,
+  "[InferenceEnvironment](#cfn-sagemaker-modelcard-modeloverview-inferenceenvironment)" : InferenceEnvironment,
+  "[ModelArtifact](#cfn-sagemaker-modelcard-modeloverview-modelartifact)" : [ String, ... ],
+  "[ModelCreator](#cfn-sagemaker-modelcard-modeloverview-modelcreator)" : String,
+  "[ModelDescription](#cfn-sagemaker-modelcard-modeloverview-modeldescription)" : String,
+  "[ModelId](#cfn-sagemaker-modelcard-modeloverview-modelid)" : String,
+  "[ModelName](#cfn-sagemaker-modelcard-modeloverview-modelname)" : String,
+  "[ModelOwner](#cfn-sagemaker-modelcard-modeloverview-modelowner)" : String,
+  "[ModelVersion](#cfn-sagemaker-modelcard-modeloverview-modelversion)" : Double,
+  "[ProblemType](#cfn-sagemaker-modelcard-modeloverview-problemtype)" : String
+}
+
+YAML
+
+  [AlgorithmType](#cfn-sagemaker-modelcard-modeloverview-algorithmtype): String
+  [InferenceEnvironment](#cfn-sagemaker-modelcard-modeloverview-inferenceenvironment): 
+    InferenceEnvironment
+  [ModelArtifact](#cfn-sagemaker-modelcard-modeloverview-modelartifact): 
+    - String
+  [ModelCreator](#cfn-sagemaker-modelcard-modeloverview-modelcreator): String
+  [ModelDescription](#cfn-sagemaker-modelcard-modeloverview-modeldescription): String
+  [ModelId](#cfn-sagemaker-modelcard-modeloverview-modelid): String
+  [ModelName](#cfn-sagemaker-modelcard-modeloverview-modelname): String
+  [ModelOwner](#cfn-sagemaker-modelcard-modeloverview-modelowner): String
+  [ModelVersion](#cfn-sagemaker-modelcard-modeloverview-modelversion): Double
+  [ProblemType](#cfn-sagemaker-modelcard-modeloverview-problemtype): String
+
+Properties
+AlgorithmType 
+The algorithm used to solve the problem. 
+Required: No 
+Type: String 
+Update requires: No interruption
+InferenceEnvironment 
+An overview about model inference. 
+Required: No 
+Type: InferenceEnvironment 
+Update requires: No interruption
+ModelArtifact 
+The location of the model artifact. 
+Required: No 
+Type: List of String 
+Update requires: No interruption
+ModelCreator 
+The creator of the model. 
+Required: No 
+Type: String 
+Update requires: No interruption
+ModelDescription 
+A description of the model. 
+Required: No 
+Type: String 
+Update requires: No interruption
+ModelId 
+The SageMaker Model ARN or non-SageMaker Model ID. 
+Required: No 
+Type: String 
+Update requires: No interruption
+ModelName 
+The name of the model. 
+Required: No 
+Type: String 
+Update requires: No interruption
+ModelOwner 
+The owner of the model. 
+Required: No 
+Type: String 
+Update requires: No interruption
+ModelVersion 
+The version of the model. 
+Required: No 
+Type: Double 
+Update requires: No interruption
+ProblemType 
+The problem being solved with the model. 
+Required: No 
+Type: String 
+Update requires: No interruption
