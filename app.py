@@ -17,6 +17,43 @@ from langchain.document_loaders import DirectoryLoader,TextLoader
 
 
 
+def convert_md_to_txt(md_content):
+
+    # Convert Markdown to HTML
+    html_content = markdown2.markdown(md_content)
+
+    # Parse HTML and extract text
+    soup = BeautifulSoup(html_content, 'html.parser')
+    plain_text = soup.get_text()
+
+    return plain_text
+
+
+def get_files(md_docs):
+    output_folder = "sagemakertext"
+    os.makedirs(output_folder, exist_ok=True)
+
+    if md_docs:
+        for md_doc in md_docs:
+            md_content = md_doc.read().decode('utf-8')
+            txt_content = convert_md_to_txt(md_content)
+
+            # Construct the output .txt file path
+            txt_filename = os.path.splitext(md_doc.name)[0] + '.txt'
+            txt_filepath = os.path.join(output_folder, txt_filename)
+
+            # Remove the existing file if it already exists
+            if os.path.exists(txt_filepath):
+                os.remove(txt_filepath)
+
+            # Save the plain text to the output .txt file
+            with open(txt_filepath, 'w', encoding='utf-8') as txt_file:
+                txt_file.write(txt_content)
+
+            st.success(f"File '{md_doc.name}' processed and saved as '{txt_filename}.  Please wait a few minutes for the model to process the data'")
+
+    st.session_state.processed=''
+
 
 def get_text_chunks(file):
     loader = DirectoryLoader('sagemakertext', glob="**/*.txt")
@@ -24,7 +61,6 @@ def get_text_chunks(file):
 
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     chunks = text_splitter.split_documents(docs)
-    print(type(chunks))
     return chunks
 
 
@@ -87,20 +123,20 @@ def main():
 
     
 
-    st.header("Ask your questions about our documentation")
+    st.header("Ask questions about our documentation")
     user_question = st.text_input("What would you like to know more about:")
     if user_question:
         handle_userinput(user_question)
 
 
-    # with st.sidebar:
-    #     st.subheader("Your documents")
-    #     md_docs = st.file_uploader(
-    #         "Upload your .md files here and click on 'Process'", accept_multiple_files=True)
-    #     if st.button("Process"):
-    #         with st.spinner("Processing"):
-    #             # get files
-    #             raw_text = get_files(md_docs)
+    with st.sidebar:
+        st.subheader("Your documents")
+        md_docs = st.file_uploader(
+            "If you have any additional files that you would like to be included in the scope of this search add them here and click on 'Process'", accept_multiple_files=True)
+        if st.button("Process"):
+            with st.spinner("Processing"):
+                # get files
+                raw_text = get_files(md_docs)
 
 
 
