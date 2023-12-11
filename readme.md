@@ -65,6 +65,8 @@ To use the Chatbot App, follow these steps:
 The application is also running on an EC2 instance on AWS. It can be acessed with the address: http://13.51.69.145:8501. 
 For the deployment I used the configuration available for the free tier subscription, which is t3.micro. So far testing it I haven't encountered any issues with the limited capacity. However, for this solution to be production ready it would be wiser to run it on a larger instance with more processing power. 
 
+The AWS Deployment version of the code is configured with my OPENAI_API_KEY and can be tested fully. Unfortunatelly I was not able to add the API key to this github repo for safety reasons. 
+
 
 ## Model
 
