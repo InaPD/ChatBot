@@ -5,7 +5,7 @@
 The Chat App is a Python application that allows you to chat about multiple documentation files. It can be run in 2 ways:
 
 1. Locally by following the instructions provided for local deployment below
-2. The deployed version on an AWS EC2 Instance at the address: http://16.16.68.233:8501
+2. The deployed version on an AWS EC2 Instance at the address: http://13.60.16.30:8501
 
 You can ask questions about the data using natural language, and the application will provide relevant responses based on the content of the documents. This app utilizes a language model to generate accurate answers to your queries. Please note that the app will only respond to questions related to the loaded documentation.
 
